@@ -1,5 +1,6 @@
 Chapter 1: Introduction to Medical Imaging
 1.1 What Is Medical Imaging?
+
 Medical imaging is the science and technology of visualizing the internal structures and functions of the human body for clinical diagnosis, treatment planning, and biomedical research. Rather than relying solely on physical examination or invasive procedures, medical imaging allows clinicians to observe anatomy and physiological processes noninvasively or minimally invasively.
 Medical imaging plays a central role in modern healthcare. It supports early disease detection, guides surgical and interventional procedures, and enables longitudinal monitoring of disease progression and treatment response. Beyond clinical use, imaging technologies are also essential tools in biomedical research, helping scientists study biological structures and processes in vivo.
 
