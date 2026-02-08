@@ -2,47 +2,25 @@ Chapter 1: Introduction to Medical Imaging
 
 1.1 What Is Medical Imaging?
 
-Medical imaging is the science and technology of visualizing the internal structures and functions of the human body for clinical diagnosis, treatment planning, and biomedical research. Rather than relying solely on physical examination or invasive procedures, medical imaging allows clinicians to observe anatomy and physiological processes in a noninvasive or minimally invasive manner.
+Medical imaging is the science and technology of visualizing the internal structures and functions of the human body for the purposes of diagnosis, treatment planning, and biomedical research. By enabling clinicians to observe anatomy and physiological processes noninvasively or minimally invasively, medical imaging has become an essential component of modern healthcare. Imaging techniques reduce reliance on exploratory surgery and allow for earlier detection and more precise treatment of disease.
 
-Medical imaging plays a central role in modern healthcare. It supports early disease detection, guides surgical and interventional procedures, and enables longitudinal monitoring of disease progression and treatment response. Beyond clinical practice, imaging technologies are also essential tools in biomedical research, enabling the study of biological structures and processes in vivo.
+Beyond clinical practice, medical imaging plays a critical role in biomedical research and technological development. Imaging tools allow researchers to study biological processes in vivo, evaluate new therapies, and improve understanding of disease mechanisms. Advances in imaging have been driven by progress in physics, engineering, and computer science, making the field highly interdisciplinary.
+
+At its core, medical imaging can be understood as a process that transforms physical signals from the human body into visual representations that can be interpreted by humans or computers. To analyze and design imaging systems rigorously, it is necessary to introduce the concept of a system and the mathematical framework used to describe system behavior.
 
 1.2 Goals of Medical Imaging
-The primary goals of medical imaging include:
+In engineering and signal processing, a system is defined as an entity that transforms an input into an output according to a specific rule or set of rules. The input may be a signal, image, or physical quantity, while the output represents the system’s response to that input. Systems may be physical devices, computational algorithms, or mathematical models.
 
-Visualization of anatomy: Identifying the size, shape, and structure of organs and tissues
+In medical imaging, the imaging chain itself can be viewed as a system. For example, the patient anatomy serves as the input, while the acquired image is the output. Between these two stages lie multiple components, including signal generation, detection, amplification, processing, and reconstruction. Each of these components can be modeled as an individual system, or together as a composite system.
 
-Functional assessment: Measuring physiological processes such as blood flow, metabolism, or neural activity
-
-Disease detection and diagnosis: Identifying abnormalities such as tumors, fractures, or lesions
-
-Treatment guidance: Assisting in surgical planning and image-guided interventions
-
-Monitoring and follow-up: Tracking disease progression or treatment effectiveness over time
-
-Different imaging modalities emphasize different goals, leading to trade-offs in spatial resolution, contrast, acquisition speed, patient safety, and cost.
+Understanding imaging systems as mathematical systems allows engineers and scientists to predict system behavior, optimize image quality, and analyze limitations such as noise and resolution. This system-based perspective forms the foundation for much of medical imaging theory and practice.
 
 1.3 Overview of Major Imaging Modalities
-Medical imaging encompasses a wide range of technologies, including:
+A system is said to be linear if it satisfies specific mathematical properties that allow for simplified analysis and prediction of its output. Linear systems are particularly important in medical imaging because many imaging processes can be approximated as linear over a useful range of operating conditions. This approximation enables the use of powerful analytical tools such as convolution and Fourier analysis, which will be introduced in later chapters.
 
-X-ray Imaging and Computed Tomography (CT)
+Linear systems are attractive because they allow complex inputs to be decomposed into simpler components. By analyzing the system’s response to these components individually, the overall system behavior can be reconstructed efficiently. Although real imaging systems are not perfectly linear, linear models often provide accurate and practical representations.
 
-X-ray imaging uses ionizing radiation to generate projection images of internal structures, particularly useful for visualizing bones and dense tissues. Computed Tomography (CT) extends this principle by acquiring multiple projections and reconstructing cross-sectional images with high spatial resolution.
-
-Magnetic Resonance Imaging (MRI)
-
-MRI uses strong magnetic fields and radiofrequency pulses to produce images with excellent soft-tissue contrast. It is especially valuable for imaging the brain, spinal cord, muscles, and internal organs without exposing patients to ionizing radiation.
-
-Ultrasound Imaging
-
-Ultrasound uses high-frequency sound waves to generate real-time images. It is widely used due to its safety, portability, and low cost, particularly in obstetrics, cardiology, and point-of-care diagnostics.
-
-Nuclear Medicine Imaging (PET and SPECT)
-
-Positron Emission Tomography (PET) and Single Photon Emission Computed Tomography (SPECT) use radioactive tracers to image metabolic and functional processes. These modalities are commonly used in oncology, neurology, and cardiology.
-
-Optical and Microscopic Imaging
-
-Optical imaging techniques, such as fluorescence microscopy and optical coherence tomography, are widely used in biomedical research and selected clinical applications, including ophthalmology.
+In imaging, linear system assumptions are commonly used when modeling blur, spatial resolution, and signal propagation. For example, the formation of an X-ray image can often be approximated as a linear process relating the object attenuation to the measured detector signal.
 
 1.4 Medical Imaging as an Interdisciplinary Field
 Medical imaging is inherently interdisciplinary, combining principles from:
