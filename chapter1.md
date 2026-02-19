@@ -11,6 +11,7 @@ Imaging modalities can be categorized based on the type of information they prov
 Figure 1 illustrates the medical imaging pipeline, highlighting the major stages from data acquisition to clinical interpretation.
 
 
+
 1.2 Functional Imaging with PET
 
 Positron Emission Tomography (PET) is a functional imaging technique that visualizes metabolic activity within the body. PET works by introducing a radioactive tracer, often attached to a biologically active molecule like glucose, which accumulates in highly metabolic regions such as tumors. As the tracer decays, it emits pairs of gamma photons in opposite directions, which are detected externally and used to reconstruct the distribution of the tracer inside the body.
