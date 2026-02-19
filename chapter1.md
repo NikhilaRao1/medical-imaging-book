@@ -6,7 +6,7 @@ Medical imaging is a critical tool in modern healthcare, allowing clinicians to 
 
 Imaging modalities can be categorized based on the type of information they provide. Some techniques focus primarily on structural or anatomical details, while others highlight functional or molecular activity. Together, these methods offer a comprehensive understanding of the body’s form and function, enabling better diagnosis, monitoring, and research.
 
-Figure 1 illustrates the medical imaging pipeline, highlighting the major stages from data acquisition to clinical interpretation.
+Figure 1: The medical imaging pipeline, highlighting the major stages from data acquisition to clinical interpretation.
 <img width="1378" height="447" alt="{F39C2E74-813F-4C09-95DC-4937AD5A0DAD}" src="https://github.com/user-attachments/assets/ce972d2a-71d4-4e48-9176-90c0e886e80c" />
 
 
@@ -44,6 +44,11 @@ Optical coherence tomography (OCT), commonly used in ophthalmology, provides hig
 Collecting images is only the first step; analyzing them is critical for extracting actionable insights. Image segmentation allows specific structures, such as tumors, organs, or blood vessels, to be isolated for detailed study. Image classification further categorizes tissues or regions based on their visual or functional features, aiding diagnosis, treatment planning, and monitoring.
 
 Other techniques, such as image enhancement, improve clarity and reveal subtle details, while visualization technologies, including augmented reality, can overlay imaging data during surgical procedures. Together, these tools transform raw imaging data into meaningful information that guides clinical decisions and research.
+
+
+Figure 2: Comparison of anatomical imaging and functional imaging, highlighting structural versus physiological information.
+<img width="1229" height="613" alt="{AAE1A8BB-F799-4129-9D29-69A37F2E79BE}" src="https://github.com/user-attachments/assets/638f982a-c73a-469b-a640-a11fea066100" />
+
 
 1.8 Linking Genotype and Phenotype
 
