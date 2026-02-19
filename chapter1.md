@@ -6,7 +6,8 @@ Medical imaging is a critical tool in modern healthcare, allowing clinicians to 
 
 Imaging modalities can be categorized based on the type of information they provide. Some techniques focus primarily on structural or anatomical details, while others highlight functional or molecular activity. Together, these methods offer a comprehensive understanding of the body’s form and function, enabling better diagnosis, monitoring, and research.
 
-<img width="1377" height="463" alt="{41E1080F-F369-4FBB-90C2-62FCD0F0D07D}" src="https://github.com/user-attachments/assets/e5b0960d-6d8b-4747-a576-a3678e0adbad" />
+<img width="1339" height="388" alt="{82A4BC0D-0022-404D-B7C4-6D80DCD81D4C}" src="https://github.com/user-attachments/assets/2bdfa737-169a-49cc-8b55-1092921b096d" />
+
 
 1.2 Functional Imaging with PET
 
