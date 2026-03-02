@@ -3,4 +3,5 @@ An online textbook for Medical Imaging, developed as part of a research project 
 ## Book Draft
 - [Chapter 1: Introduction to Medical Imaging](chapter1.md)
 - [Chapter 2: Signal and System Foundations for Medical Imaging](chapter2.md)
-*This is a draft of Chapters 1 and 2 of the Medical Imaging online textbook. Later chapters and quizzes will be added using AI-assisted content generation.*
+
+*These are drafts of Chapters 1 and 2 of the Medical Imaging online textbook. Later chapters and quizzes will be added using AI-assisted content generation.*
