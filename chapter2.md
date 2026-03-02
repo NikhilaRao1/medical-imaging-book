@@ -1,1 +1,4 @@
+2.1 Introduction
 
+Mathematical functions are fundamental tools used to describe and analyze systems in bioimaging and biomedical signal processing. Imaging modalities such as magnetic resonance imaging (MRI), ultrasound, and optical imaging rely on mathematical models to relate physical inputs to measurable outputs. By representing these relationships using functions, complex biological and physical processes can be systematically analyzed and optimized.
+In bioimaging, signals and images are often interpreted as functions of time, space, or frequency. Understanding how these functions behave allows engineers and scientists to design imaging systems that accurately capture biological information. This chapter introduces the core concepts of functions and mapping, followed by an exploration of linear and sinusoidal functions, which are widely used in bioimaging and signal processing applications.
