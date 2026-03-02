@@ -310,3 +310,145 @@ f(x1)+f(x2)=m2x1+m2x2=m2(x1+x2).f(x_1) + f(x_2) = m_2 x_1 + m_2 x_2 = m_2(x_1 + 
 Because m1≠m2m_1 \neq m_2m1​=m2​, these expressions are not equal, and additivity is violated.
 
 This example demonstrates that homogeneity does not imply additivity. A system may scale inputs correctly while failing to preserve sums, which disqualifies it from being linear.
+
+2.28 Implications for Testing Linearity
+
+The counterexamples presented above establish that additivity and homogeneity are logically independent properties in general. Neither condition alone is sufficient to guarantee linearity unless additional assumptions, such as continuity, are imposed. As a result, both properties must be explicitly verified when analyzing an unknown system.
+
+In biomedical signal processing and medical imaging, assumptions of linearity are often made to simplify analysis and computation. However, these assumptions must be justified carefully, especially when dealing with nonlinear tissue responses, hardware limitations, or signal-dependent effects. Understanding the independence of additivity and homogeneity helps prevent incorrect modeling assumptions.
+
+By rigorously testing both conditions, engineers and scientists ensure that linear system theory is applied only when appropriate. This rigor underpins reliable image reconstruction, signal analysis, and system design in modern bioimaging applications.
+
+2.29 Relative Linearity
+
+In many practical systems, the apparent behavior of a system may not look strictly linear when absolute input and output values are considered. This discrepancy arises because real-world systems often include offsets, biases, or baseline values that shift the output independently of the input. While the system may seem nonlinear under these conditions, it can behave linearly when examined in terms of relative changes—that is, changes from a reference point rather than absolute values.
+
+To formalize this idea, consider the system’s input-output relationship defined in a specific coordinate system. Let the input change by Δx1(t)\Delta x_1(t)Δx1​(t), producing a corresponding output change Δy1(t)\Delta y_1(t)Δy1​(t), such that
+
+Δy1(t)=L[Δx1(t)].\Delta y_1(t) = L[\Delta x_1(t)].Δy1​(t)=L[Δx1​(t)].
+
+Similarly, a second input change Δx2(t)\Delta x_2(t)Δx2​(t) produces
+
+Δy2(t)=L[Δx2(t)].\Delta y_2(t) = L[\Delta x_2(t)].Δy2​(t)=L[Δx2​(t)].
+
+If the system satisfies linearity for these relative changes, then any weighted combination of the input changes also produces a proportional combination of output changes:
+
+αΔy1(t)+βΔy2(t)=L[αΔx1(t)+βΔx2(t)],\alpha \Delta y_1(t) + \beta \Delta y_2(t) = L[\alpha \Delta x_1(t) + \beta \Delta x_2(t)],αΔy1​(t)+βΔy2​(t)=L[αΔx1​(t)+βΔx2​(t)],
+
+where α\alphaα and β\betaβ are scalar weights.
+
+This approach essentially redefines the linear system around a reference operating point, often referred to as the system’s nominal state. By focusing on deviations from this reference, the system behaves according to the superposition principle, even if the absolute input-output function includes an intercept or other nonlinear baseline behavior. The key insight is that linearity can be meaningful in terms of relative changes, rather than absolute values.
+
+In medical imaging, relative linearity is particularly useful. Imaging devices often have baseline offsets or background signals, such as dark current in optical detectors or baseline voltage in MRI receivers. By analyzing changes in signals relative to these baselines, rather than raw absolute measurements, the system can be treated as effectively linear. This simplifies reconstruction algorithms, calibration procedures, and quantitative analyses. For example, in functional MRI (fMRI), relative changes in signal intensity are used to infer brain activity rather than absolute signal values. Similarly, in CT or ultrasound imaging, analyzing contrast or intensity changes relative to tissue background allows linear models to guide reconstruction and processing, even when absolute signals include offsets.
+
+By adopting a relative perspective, engineers and clinicians can apply linear system theory more broadly and leverage the associated mathematical tools, such as superposition, convolution, and Fourier analysis. This makes it possible to model, analyze, and interpret imaging data effectively, even when the underlying physical system exhibits nonlinear offsets in absolute terms.
+
+2.30 Voltage–Current Relationships in Electrical Components
+
+Understanding how basic electrical components respond to voltage and current is fundamental for analyzing circuits in biomedical imaging systems. The voltage–current (V–I) relationships define how each component behaves under different electrical conditions, and these relationships also illustrate the concept of linearity in physical systems. Resistors, capacitors, and inductors, while each having distinct characteristics, are widely used in imaging equipment to regulate and stabilize electrical signals.
+
+2.30.1 Resistors
+
+A resistor is the simplest linear electrical component, and its behavior is governed by Ohm’s law. The relationship between voltage vvv across a resistor and the current iii through it is given by
+
+v=iR,v = iR,v=iR,
+
+where RRR is the resistance. This equation shows that the voltage is directly proportional to the current. Equivalently, one can express the current as a function of voltage:
+
+i=vR.i = \frac{v}{R}.i=Rv​.
+
+Whether voltage is treated as a function of current or vice versa, the relationship remains clearly linear, as the slope of the V–I curve is constant. In biomedical imaging systems, resistors are used to control signal amplitudes, set biasing conditions in sensors, and limit current to protect sensitive components. Their predictable linear behavior makes them essential for precise and stable circuit operation.
+
+2.30.2 Capacitors
+
+A capacitor stores electrical charge and exhibits a V–I relationship that depends on the time rate of change of current or voltage. The voltage across a capacitor is related to the accumulated charge by
+
+v(t)=1C∫t0ti(τ) dτ+v(t0),v(t) = \frac{1}{C} \int_{t_0}^{t} i(\tau) \, d\tau + v(t_0),v(t)=C1​∫t0​t​i(τ)dτ+v(t0​),
+
+where CCC is the capacitance, i(τ)i(\tau)i(τ) is the current, and v(t0)v(t_0)v(t0​) is the initial voltage at the start of the integration period. Conversely, the current through a capacitor is related to the rate of change of voltage:
+
+i(t)=Cdv(t)dt.i(t) = C \frac{dv(t)}{dt}.i(t)=Cdtdv(t)​.
+
+These equations reflect the fact that a capacitor accumulates electrical charge over time, and the current depends on how rapidly the voltage changes. Capacitors are widely used in medical imaging electronics to stabilize power supplies and smooth analog signals before they are converted into digital data. For example, in CT or MRI systems, capacitors filter high-frequency noise and provide consistent voltage levels to sensitive detectors and amplifiers, ensuring accurate measurements and reducing artifacts in images.
+
+2.30.3 Inductors
+
+An inductor opposes sudden changes in current, storing energy in a magnetic field. Its V–I relationships are complementary to those of capacitors. The voltage across an inductor is proportional to the rate of change of current:
+
+v(t)=Ldi(t)dt,v(t) = L \frac{di(t)}{dt},v(t)=Ldtdi(t)​,
+
+where LLL is the inductance. Conversely, the current through an inductor depends on the integral of voltage over time:
+
+i(t)=1L∫t0tv(τ) dτ+i(t0).i(t) = \frac{1}{L} \int_{t_0}^{t} v(\tau) \, d\tau + i(t_0).i(t)=L1​∫t0​t​v(τ)dτ+i(t0​).
+
+Unlike capacitors, which resist sudden voltage changes, inductors resist sudden changes in current. This property allows the current to build gradually rather than instantaneously, which helps smooth and stabilize electrical signals. In medical imaging equipment such as MRI machines, inductors are crucial for maintaining steady currents in coils and amplifiers, preventing spikes or fluctuations that could distort signals or damage sensitive hardware.
+
+2.30.4 Summary of V–I Behavior
+
+Resistors, capacitors, and inductors illustrate different aspects of electrical linearity. Resistors exhibit direct proportionality between voltage and current, capacitors relate current to the derivative of voltage (or voltage to integrated current), and inductors relate voltage to the derivative of current (or current to integrated voltage). In biomedical imaging systems, these components work together to regulate, filter, and stabilize signals, ensuring high-quality, accurate imaging while protecting sensitive electronic equipment.
+
+2.31 Shift-Invariant Linear Systems
+
+A shift-invariant linear system is a system in which a shift in the input signal results in an equivalent shift in the output signal, without changing the shape or characteristics of the response. In other words, the system’s behavior does not depend on the absolute position of the input in time or space; it responds in the same way regardless of when or where the input occurs. Mathematically, if the system is represented by an operator LLL and produces an output w(t)w(t)w(t) for an input v(t)v(t)v(t), shift invariance is expressed as
+
+v(t−τ)→Lw(t−τ),v(t - \tau) \xrightarrow{L} w(t - \tau),v(t−τ)L​w(t−τ),
+
+or equivalently,
+
+L[v(t−τ)]=w(t−τ),L[v(t - \tau)] = w(t - \tau),L[v(t−τ)]=w(t−τ),
+
+where τ\tauτ is the shift in the input signal.
+
+A real-world example of a shift-invariant system is an audio amplifier. If an audio signal is delayed by a few seconds before being input, the amplified output is the same waveform delayed by the same amount. The amplifier does not change the tone or amplitude of the signal based on the time of arrival; it treats all inputs consistently, simply producing a shifted version of the output.
+
+Shift invariance provides several benefits in medical imaging. Imaging systems often measure signals sequentially in time or across spatial coordinates, such as the acquisition of slices in a CT scanner or echoes in MRI. Shift invariance ensures that the system processes each part of the signal consistently, making the response predictable and allowing image reconstruction algorithms to assume uniform behavior across time or space. This property is crucial for techniques like convolution-based filtering, deblurring, and tomographic reconstruction, which rely on the output being a shifted version of the input when the input itself is shifted.
+
+Shift invariance can also be expressed in the spatial or general functional domain. For a function f(x)f(x)f(x) processed by a system to produce output g(x)g(x)g(x), the property is written as
+
+f(x−a)→Lg(x−a),f(x - a) \xrightarrow{L} g(x - a),f(x−a)L​g(x−a),
+
+where a shift aaa in the input produces the same shift in the output. This general form applies to both time-domain signals and spatial-domain imaging. For instance, in MRI, moving the imaging slice slightly along one axis shifts the measured signals in a predictable way without altering their shape, which is a direct manifestation of spatial shift invariance.
+
+Shift invariance is sometimes referred to as temporal invariance when applied in the time domain or spatial invariance when applied in imaging coordinates. In all cases, the key idea is that the system’s behavior depends only on the form of the input, not its location. This property greatly simplifies analysis and processing because linear operations, such as convolution and filtering, can be applied universally across all parts of the signal or image.
+
+In summary, shift-invariant linear systems provide a foundation for predictable, consistent signal processing in both time and space. Their properties allow engineers to design algorithms for filtering, reconstruction, and analysis that can be applied uniformly across an entire dataset, which is critical for producing high-quality, accurate medical images.
+
+2.32 Nonlinear Systems
+
+A nonlinear system is a system in which the output is not directly proportional to the input, meaning that the principles of additivity and homogeneity no longer apply. Unlike linear systems, nonlinear equations are often more difficult to solve, and in many cases it is impossible to find exact analytical solutions. Nonlinear systems can exhibit behaviors that are counterintuitive or unpredictable, including chaos, solitons, and singularities, which do not appear in linear systems.
+
+Modern computing has made it possible to study and simulate nonlinear systems numerically, providing insight into their complex behavior even when exact solutions cannot be obtained. Nonlinear systems are encountered across science and engineering, from fluid dynamics and weather modeling to biological population dynamics and biomedical imaging signal processing. These systems can exhibit emergent patterns, where simple underlying rules generate highly intricate or unpredictable outcomes.
+
+A classical example of a nonlinear system is the logistic map, a mathematical model commonly used in population dynamics. The logistic map is expressed as
+
+xn+1=rxn(1−xn),x_{n+1} = r x_n (1 - x_n),xn+1​=rxn​(1−xn​),
+
+where xnx_nxn​ represents the population at generation nnn (normalized to the maximum capacity of the environment), and rrr is the growth rate parameter. The term 1−xn1 - x_n1−xn​ accounts for environmental limitations: as the population approaches the maximum capacity, growth slows due to scarcity of resources.
+
+The logistic map demonstrates how complex behaviors emerge from a simple nonlinear equation. Depending on the value of the growth rate rrr, the population may stabilize at a fixed value, oscillate between multiple values, or exhibit chaotic fluctuations where small changes in initial conditions lead to vastly different outcomes. This model reflects how natural systems regulate themselves and illustrates the rich variety of patterns that can arise in nonlinear systems.
+
+Nonlinear dynamics have broad implications beyond ecology. In biomedical engineering, nonlinear models are used to describe neural network activity, cardiac rhythms, and even the nonlinear response of imaging systems at extreme operating ranges. Understanding the principles of nonlinear systems allows engineers and scientists to anticipate unexpected behavior, design robust control strategies, and interpret complex signals that would be misrepresented by linear approximations.
+
+In summary, while nonlinear systems are mathematically more challenging than linear systems, they capture the richness and complexity of real-world phenomena. Simple nonlinear rules, like those in the logistic map, can produce stability, periodicity, or chaos, revealing how complex behavior emerges naturally from simple equations.
+
+2.33 Chaotic Behavior
+
+Chaos in mathematical systems refers to deterministic behavior that is extremely sensitive to initial conditions. In chaotic systems, even small changes at the start can lead to dramatically different outcomes over time. A common example is long-term weather forecasting: despite the underlying physics being deterministic, small measurement errors in the initial state can produce widely divergent predictions after a few days, making forecasts unreliable beyond a certain time horizon.
+
+Graphs of chaotic systems, such as iterations of the logistic map, often display complex, seemingly random patterns, even though they arise from simple deterministic rules. Chaos is an important concept in nonlinear dynamics because it highlights how predictability can break down, even when the system is governed by known equations. Understanding chaotic behavior is critical in modeling natural systems, including biological rhythms, cardiac signals, and population dynamics, where small fluctuations can have large effects.
+
+2.34 Biological and Artificial Neurons
+
+A biological neuron is a specialized cell that processes and transmits information in the nervous system. It collects incoming signals through branched structures called dendrites, which receive chemical or electrical inputs from other neurons. These inputs are integrated in the cell body (soma). While small individual inputs may have little or no effect, when the combined inputs exceed a certain threshold, the neuron fires an action potential, sending an electrical impulse along the axon to the synapses. At the synapses, this signal communicates with the next neuron, propagating information through the network.
+
+This threshold-based behavior allows the nervous system to filter out noise and respond only to meaningful stimuli. From a mathematical perspective, biological neurons can be modeled as artificial neurons, which sum their inputs, apply a non-linear activation function, and produce an output if the threshold is exceeded. This abstraction forms the basis of modern neural networks, linking biological principles to computational models.
+
+2.35 Deep Neural Networks (DNNs)
+
+Deep neural networks (DNNs) are composed of multiple layers of artificial neurons, organized hierarchically. Each layer learns increasingly abstract feature representations from the input data. The first layer might learn simple features, such as edges or colors in an image, while subsequent layers combine these features to recognize more complex patterns, such as shapes, objects, or tissue structures in medical images.
+
+Training a DNN involves adjusting the weights of connections between neurons based on the difference between the predicted output and the true output, a process called backpropagation. Layered learning enables the network to identify hierarchical structures in data, making DNNs extremely effective at tasks that require pattern recognition.
+
+In the real world, DNNs are widely used in image and signal processing applications. In medical imaging, DNNs assist in detecting tumors in MRI scans, segmenting organs in CT images, and enhancing low-quality ultrasound data. Outside medicine, DNNs power autonomous vehicles, speech recognition, and facial recognition, demonstrating the broad utility of hierarchical feature learning.
+
+By modeling both biological and artificial neural networks, engineers and researchers gain insight into how complex patterns and meaningful information can be extracted from noisy or high-dimensional data. This principle underlies much of modern biomedical imaging and AI-assisted diagnostics.
