@@ -401,19 +401,25 @@ By rigorously testing both conditions, engineers and scientists ensure that line
 
 In many practical systems, the apparent behavior of a system may not look strictly linear when absolute input and output values are considered. This discrepancy arises because real-world systems often include offsets, biases, or baseline values that shift the output independently of the input. While the system may seem nonlinear under these conditions, it can behave linearly when examined in terms of relative changes—that is, changes from a reference point rather than absolute values.
 
-To formalize this idea, consider the system’s input-output relationship defined in a specific coordinate system. Let the input change by Δx1(t)\Delta x_1(t)Δx1​(t), producing a corresponding output change Δy1(t)\Delta y_1(t)Δy1​(t), such that
+To formalize this idea, consider the system’s input-output relationship defined in a specific coordinate system. Let the input change by $\Delta x_1(t)$, producing a corresponding output change $\Delta y_1(t)$, such that
 
-Δy1(t)=L[Δx1(t)].\Delta y_1(t) = L[\Delta x_1(t)].Δy1​(t)=L[Δx1​(t)].
+$$
+\Delta y_1(t) = L[\Delta x_1(t)].
+$$
 
-Similarly, a second input change Δx2(t)\Delta x_2(t)Δx2​(t) produces
+Similarly, a second input change $\Delta x_2(t)$ produces
 
-Δy2(t)=L[Δx2(t)].\Delta y_2(t) = L[\Delta x_2(t)].Δy2​(t)=L[Δx2​(t)].
+$$
+\Delta y_2(t) = L[\Delta x_2(t)].
+$$
 
 If the system satisfies linearity for these relative changes, then any weighted combination of the input changes also produces a proportional combination of output changes:
 
-αΔy1(t)+βΔy2(t)=L[αΔx1(t)+βΔx2(t)],\alpha \Delta y_1(t) + \beta \Delta y_2(t) = L[\alpha \Delta x_1(t) + \beta \Delta x_2(t)],αΔy1​(t)+βΔy2​(t)=L[αΔx1​(t)+βΔx2​(t)],
+$$
+\alpha \Delta y_1(t) + \beta \Delta y_2(t) = L[\alpha \Delta x_1(t) + \beta \Delta x_2(t)].
+$$
 
-where α\alphaα and β\betaβ are scalar weights.
+where $\alpha$ and $\beta$ are scalar weights.
 
 This approach essentially redefines the linear system around a reference operating point, often referred to as the system’s nominal state. By focusing on deviations from this reference, the system behaves according to the superposition principle, even if the absolute input-output function includes an intercept or other nonlinear baseline behavior. The key insight is that linearity can be meaningful in terms of relative changes, rather than absolute values.
 
