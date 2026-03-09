@@ -4,7 +4,7 @@
 
 Medical imaging plays a foundational role in modern healthcare by allowing clinicians to look inside the human body to diagnose, monitor, and treat disease. It transforms invisible biological processes into visible information, helping doctors detect conditions early, guide interventions, and evaluate how well treatments are working. From identifying a fractured bone to tracking the progression of cancer, medical imaging directly contributes to saving lives and improving patient outcomes.
 
-Bioimaging—also called biomedical imaging or medical imaging—refers to a collection of technologies that create visual representations of structures and functions within the body. These terms are often used interchangeably and all describe the same core idea: using physics, engineering, and computation to visualize anatomy, physiology, and molecular activity. Each imaging technique is designed to highlight different features, offering complementary views of the same biological system.
+Bioimaging, also called biomedical imaging or medical imaging, refers to a collection of technologies that create visual representations of structures and functions within the body. These terms are often used interchangeably and all describe the same core idea: using physics, engineering, and computation to visualize anatomy, physiology, and molecular activity. Each imaging technique is designed to highlight different features, offering complementary views of the same biological system.
 
 As humans, we cannot see through solid objects. Medical imaging effectively gives us this ability—often compared to having “X-ray vision”—but without cutting into the body. Most imaging techniques are noninvasive, meaning they do not require surgical incisions. This dramatically reduces risk, pain, and recovery time for patients while still providing critical internal information.
 
@@ -81,11 +81,41 @@ This convergence is the foundation of biomedical engineering, a field that expli
 
 X-ray imaging begins with a line integral model. As X-rays pass through an object, they are attenuated by the material along their path. The detector measures the energy (or intensity) of the transmitted X-ray photons, and this measurement corresponds mathematically to an integral of the object’s attenuation properties along the X-ray path. Each measurement therefore captures cumulative information along a straight line through the object.
 
-When this process is repeated across many parallel rays, the result is a collection of line integrals that form the Radon transform of the object. If the object is represented as a two-dimensional function f(x,y)f(x,y)f(x,y), then the measured data can be described as a new function p(t,θ)p(t,\theta)p(t,θ). Here, ttt represents position along a one-dimensional detector array, and θ\thetaθ represents the orientation angle of the X-ray projection. By changing the angle θ\thetaθ, the data acquisition system rotates around the object and gathers projections from many different directions.
+When this process is repeated across many parallel rays, the result is a collection of line integrals that form the Radon transform of the object. If the object is represented as a two-dimensional function 
 
-The central goal of X-ray computed tomography is to reconstruct the original image f(x,y)f(x,y)f(x,y) from the measured projection data p(t,θ)p(t,\theta)p(t,θ). This reconstruction problem is an example of inversion: starting with indirect measurements and inferring the internal structure that produced them. The key mathematical tool that makes this possible is Fourier analysis.
+$$
+f(x, y),
+$$
 
-For each fixed angle θ\thetaθ, a one-dimensional Fourier transform is applied to the corresponding projection p(t,θ)p(t,\theta)p(t,θ). A remarkable result—known as the Fourier slice theorem—states that the Fourier transform of a projection corresponds to a slice through the two-dimensional Fourier transform of the original image. Each 1D projection therefore provides a line (or profile) of information in the frequency domain.
+then the measured data can be described as a new function 
+
+$$
+p(t, \theta).
+$$
+
+Here, $t$ represents position along a one-dimensional detector array, and $\theta$ represents the orientation angle of the X-ray projection. By changing the angle $\theta$, the data acquisition system rotates around the object and gathers projections from many different directions.
+
+The central goal of X-ray computed tomography is to reconstruct the original image 
+
+$$
+f(x, y)
+$$ 
+
+from the measured projection data 
+
+$$
+p(t, \theta).
+$$ 
+
+This reconstruction problem is an example of inversion: starting with indirect measurements and inferring the internal structure that produced them. The key mathematical tool that makes this possible is Fourier analysis.
+
+For each fixed angle $\theta$, a one-dimensional Fourier transform is applied to the corresponding projection 
+
+$$
+p(t, \theta).
+$$ 
+
+A remarkable result—known as the Fourier slice theorem—states that the Fourier transform of a projection corresponds to a slice through the two-dimensional Fourier transform of the original image. Each 1D projection therefore provides a line (or profile) of information in the frequency domain.
 
 As the acquisition system rotates and projections are collected over many angles, these frequency-domain slices fill up the entire two-dimensional Fourier space of the object. Once sufficient coverage of this Fourier space is obtained, the original image can be reconstructed by applying the inverse Fourier transform.
 This framework highlights a deep connection between data acquisition and image reconstruction. The forward process—collecting X-ray projections as line integrals—is mathematically linked to the inverse process—reconstructing the image—through Fourier analysis. Understanding this relationship is fundamental to biomedical imaging, as it reveals how physical measurements, mathematical transforms, and computational algorithms work together to produce meaningful images of the human body.
@@ -98,6 +128,7 @@ PET imaging begins by introducing a radioactive tracer into the body. These trac
 The tracer undergoes radioactive decay by emitting a positron. When the positron encounters an electron, the two annihilate, producing a pair of gamma-ray photons. These two photons are emitted simultaneously and travel in nearly opposite directions. Gamma rays, like X-rays, can penetrate tissue and escape the body, allowing them to be detected externally.
 
 PET scanners are designed with rings of detectors surrounding the patient. When two detectors on opposite sides of the scanner register gamma-ray photons at the same time, the system infers that both photons originated from the same annihilation event. This event must have occurred somewhere along the straight line connecting the two detectors, known as a line of response. By collecting millions of these coincident events from many angles, PET builds up a dataset of projection measurements.
+
 As with CT, image formation in PET is fundamentally an inversion problem. The measured projection data are processed using mathematical reconstruction techniques—many of which rely on Fourier analysis—to reconstruct a three-dimensional image of tracer concentration inside the body. The resulting image maps metabolic or biochemical activity across tissues.
 
 A key strength of PET is its complementarity with CT. CT provides high-resolution anatomical detail, clearly showing the shapes and boundaries of organs, while PET reveals biological function, such as metabolism occurring within those structures. Together, they allow clinicians to see not only where structures are, but what they are doing, making PET a cornerstone of functional bioimaging.
