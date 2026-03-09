@@ -57,7 +57,7 @@ In bioimaging and biomedical signal processing, Taylor expansions are commonly u
 
 2.8 Linear Functions in One and Two Dimensions
 
-Linear functions are among the most important mathematical tools used in engineering and medical imaging because of their simplicity and interpretability. In one dimension, a linear function describes how a single input variable maps to a single output variable, typically in the form f(x) = mx+bf(x) = mx + bf(x) = mx+b. This type of function is commonly used to model relationships such as signal amplitude as a function of time or sensor output as a function of input intensity.
+Linear functions are among the most important mathematical tools used in engineering and medical imaging because of their simplicity and interpretability. In one dimension, a linear function describes how a single input variable maps to a single output variable, typically in the form $f(x) = mx + b$. This type of function is commonly used to model relationships such as signal amplitude as a function of time or sensor output as a function of input intensity.
 
 Two-dimensional linear functions extend this concept by mapping inputs from a two-dimensional domain to outputs. In medical imaging, two-dimensional linear relationships often arise when modeling images, which can be represented as functions of spatial coordinates (x,y)(x, y)(x,y). Linear models in two dimensions are frequently used in image formation, filtering, and reconstruction algorithms.
 
