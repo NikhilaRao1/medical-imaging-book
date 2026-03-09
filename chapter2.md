@@ -172,17 +172,26 @@ Additivity allows complex inputs to be broken into simpler components that can b
 
 2.19 Homogeneity
 
-Homogeneity describes how a system responds when an input is scaled by a constant factor. A system is homogeneous if scaling the input by a scalar α\alphaα results in the output being scaled by the same factor. This property is expressed mathematically as
+Homogeneity describes how a system responds when an input is scaled by a constant factor. A system is homogeneous if scaling the input by a scalar α\alphaα results in the output being scaled by the same factor. This property is expressed mathematically as:
 
-L(αv(t))=αL(v(t)).L(\alpha v(t)) = \alpha L(v(t)).L(αv(t))=αL(v(t)).
+$$
+L(\alpha v(t)) = \alpha L(v(t))
+$$
 
-Using function notation, if an input f1(x)f_1(x)f1​(x) produces an output K1(x)K_1(x)K1​(x), then scaling the input by a constant a1a_1a1​ must scale the output accordingly. This relationship can be written as
+Using function notation, if an input \(f_1(x)\) produces an output \(K_1(x)\), then scaling the input by a constant \(a_1\) must scale the output accordingly. This relationship can be written symbolically as:
 
-f1(x)→H[f1(x)]→K1(x),f_1(x) \rightarrow H[f_1(x)] \rightarrow K_1(x),f1​(x)→H[f1​(x)]→K1​(x), a1f1(x)→H[a1f1(x)]→a1K1(x),a_1 f_1(x) \rightarrow H[a_1 f_1(x)] \rightarrow a_1 K_1(x),a1​f1​(x)→H[a1​f1​(x)]→a1​K1​(x),
+$$
+\begin{align*}
+f_1(x) &\rightarrow H[f_1(x)] \rightarrow K_1(x), \\
+a_1 f_1(x) &\rightarrow H[a_1 f_1(x)] \rightarrow a_1 K_1(x),
+\end{align*}
+$$
 
-which implies
+which implies:
 
-H[a1f1(x)]=a1H[f1(x)].H[a_1 f_1(x)] = a_1 H[f_1(x)].H[a1​f1​(x)]=a1​H[f1​(x)].
+$$
+H[a_1 f_1(x)] = a_1 H[f_1(x)].
+$$
 
 Homogeneity ensures that the system preserves relative signal strength. In medical imaging, this means that doubling the signal intensity from tissue should double the measured response, assuming the system is operating within its linear range. This property is essential for accurate quantitative imaging.
 
@@ -190,9 +199,11 @@ Homogeneity ensures that the system preserves relative signal strength. In medic
 
 The superposition principle states that the response of a linear system to a weighted sum of inputs equals the same weighted sum of the individual responses. This principle follows directly from the combined application of additivity and homogeneity. Together, these properties allow linear systems to handle complex inputs by decomposing them into simpler signals.
 
-A direct consequence of homogeneity is that if the input to a linear system is zero, the output must also be zero. Setting the scalar α=0\alpha = 0α=0 in the homogeneity condition yields
+A direct consequence of homogeneity is that if the input to a linear system is zero, the output must also be zero. Setting the scalar \(\alpha = 0\) in the homogeneity condition yields:
 
-L(0⋅v(t))=0⋅L(v(t))=0.L(0 \cdot v(t)) = 0 \cdot L(v(t)) = 0.L(0⋅v(t))=0⋅L(v(t))=0.
+$$
+L(0 \cdot v(t)) = 0 \cdot L(v(t)) = 0
+$$
 
 This confirms that linear systems cannot generate output without an input.
 When dealing with infinite sums of input components, linearity requires that the resulting infinite sum of outputs must converge. This condition ensures that the system’s response remains finite and physically meaningful. In imaging systems, convergence is critical when reconstructing images from large or continuous datasets.
@@ -213,27 +224,39 @@ This equivalence is important in theoretical system analysis because it simplifi
 
 2.23 Homogeneity Implies Scaling Properties
 
-Consider a function f(x)f(x)f(x) that satisfies homogeneity, meaning that for any scalar nnn,
-f(nx)=nf(x).f(nx) = n f(x).f(nx)=nf(x).
+Consider a function \(f(x)\) that satisfies homogeneity, meaning that for any scalar \(n\),
 
-This equation expresses the idea that scaling the input by a factor nnn scales the output by the same factor. This is the defining characteristic of homogeneity.
-From this property, additional scaling relationships can be derived. For example, the function value at xxx can be written as
+$$
+f(nx) = n f(x)
+$$
 
-f(x)=f(mxm)=mf(xm),f(x) = f\left(\frac{m x}{m}\right) = m f\left(\frac{x}{m}\right),f(x)=f(mmx​)=mf(mx​),
+This equation expresses the idea that scaling the input by a factor \(n\) scales the output by the same factor. This is the defining characteristic of homogeneity.
 
-which implies
+From this property, additional scaling relationships can be derived. For example, the function value at \(x\) can be written as:
 
-f(xm)=1mf(x).f\left(\frac{x}{m}\right) = \frac{1}{m} f(x).f(mx​)=m1​f(x).
+$$
+f(x) = f\left(m \cdot \frac{x}{m}\right) = m f\left(\frac{x}{m}\right),
+$$
+
+which implies:
+
+$$
+f\left(\frac{x}{m}\right) = \frac{1}{m} f(x).
+$$
 
 This result shows that homogeneity applies not only to integer scaling but also to fractional scaling, provided the system behaves continuously.
 
-Homogeneity also imposes constraints on the function’s behavior at the origin. Using additivity at zero,
+Homogeneity also imposes constraints on the function’s behavior at the origin. Using additivity at zero:
 
-f(0)=f(x+(−x))=f(x)+f(−x),f(0) = f(x + (-x)) = f(x) + f(-x),f(0)=f(x+(−x))=f(x)+f(−x),
+$$
+f(0) = f(x + (-x)) = f(x) + f(-x),
+$$
 
-which implies
+which implies:
 
-f(−x)=−f(x).f(-x) = -f(x).f(−x)=−f(x).
+$$
+f(-x) = -f(x).
+$$
 
 This result confirms that homogeneous functions must be odd functions, a property consistent with linear behavior.
 
