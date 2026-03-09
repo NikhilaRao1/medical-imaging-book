@@ -145,8 +145,6 @@ An important consequence of linearity is that a linear system must produce zero 
 
 Additivity describes how a system responds to the sum of two inputs. A system is additive if the response to a combined input equals the sum of the individual responses. In mathematical terms, this property is expressed as
 
-L(v1(t)+v2(t))=L(v1(t))+L(v2(t)).L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t)).L(v1​(t)+v2​(t))=L(v1​(t))+L(v2​(t)).
-
 $$
 L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t))
 $$
