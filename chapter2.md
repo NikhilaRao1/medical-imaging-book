@@ -146,7 +146,7 @@ In biomedical applications, robotic and artificial systems are increasingly inte
 
 A system is defined as linear if it satisfies two fundamental properties: additivity and homogeneity. These properties describe how the system responds to combinations and scalings of inputs. Linear systems are central to biomedical signal processing and medical imaging because they are mathematically tractable and allow powerful analytical tools to be applied.
 
-Mathematically, if a system is represented by an operator LLL acting on an input signal v(t)v(t)v(t), linearity ensures predictable and consistent behavior. This predictability is essential in imaging systems, where signals are often decomposed, processed, and recombined. Many imaging and reconstruction algorithms are explicitly designed under the assumption of linearity.
+Mathematically, if a system is represented by an operator \(L\) acting on an input signal \(v(t)\), linearity ensures predictable and consistent behavior. This predictability is essential in imaging systems, where signals are often decomposed, processed, and recombined. Many imaging and reconstruction algorithms are explicitly designed under the assumption of linearity.
 
 An important consequence of linearity is that a linear system must produce zero output when given zero input. If an input signal contains no energy or information, the system cannot generate output on its own. This condition follows directly from the properties of additivity and homogeneity.
 
@@ -158,9 +158,15 @@ $$
 L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t))
 $$
 
-This concept can be illustrated using function notation. If an input function f1(x)f_1(x)f1​(x) is processed by a system HHH to produce an output K1(x)K_1(x)K1​(x), and another input f2(x)f_2(x)f2​(x) produces an output K2(x)K_2(x)K2​(x), then the combined input f1(x)+f2(x)f_1(x) + f_2(x)f1​(x)+f2​(x) must produce the combined output K1(x)+K2(x)K_1(x) + K_2(x)K1​(x)+K2​(x). Symbolically,
+This concept can be illustrated using function notation. If an input function \(f_1(x)\) is processed by a system \(H\) to produce an output \(K_1(x)\), and another input \(f_2(x)\) produces an output \(K_2(x)\), then the combined input\(f_1(x) + f_2(x)\) must produce the combined output \(K_1(x) + K_2(x)\). Symbolically:
 
-f1(x)→H[f1(x)]→K1(x),f_1(x) \rightarrow H[f_1(x)] \rightarrow K_1(x),f1​(x)→H[f1​(x)]→K1​(x), f2(x)→H[f2(x)]→K2(x),f_2(x) \rightarrow H[f_2(x)] \rightarrow K_2(x),f2​(x)→H[f2​(x)]→K2​(x), f1(x)+f2(x)→H[f1(x)+f2(x)]→K1(x)+K2(x).f_1(x) + f_2(x) \rightarrow H[f_1(x) + f_2(x)] \rightarrow K_1(x) + K_2(x).f1​(x)+f2​(x)→H[f1​(x)+f2​(x)]→K1​(x)+K2​(x).
+$$
+\begin{align*}
+f_1(x) &\rightarrow H[f_1(x)] \rightarrow K_1(x), \\
+f_2(x) &\rightarrow H[f_2(x)] \rightarrow K_2(x), \\
+f_1(x) + f_2(x) &\rightarrow H[f_1(x) + f_2(x)] \rightarrow K_1(x) + K_2(x).
+\end{align*}
+$$
 
 Additivity allows complex inputs to be broken into simpler components that can be analyzed independently. Each component is processed separately, and the individual results are then combined to understand the system’s overall response. In medical imaging, this principle is critical for image reconstruction, where measured signals are often decomposed into contributions from different spatial locations or tissue properties.
 
