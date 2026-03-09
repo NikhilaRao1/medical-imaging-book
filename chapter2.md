@@ -433,13 +433,17 @@ Understanding how basic electrical components respond to voltage and current is 
 
 2.30.1 Resistors
 
-A resistor is the simplest linear electrical component, and its behavior is governed by Ohm’s law. The relationship between voltage vvv across a resistor and the current iii through it is given by
+A resistor is the simplest linear electrical component, and its behavior is governed by Ohm’s law. The relationship between voltage $v$ across a resistor and the current $i$ through it is given by
 
-v=iR,v = iR,v=iR,
+$$
+v = iR
+$$
 
-where RRR is the resistance. This equation shows that the voltage is directly proportional to the current. Equivalently, one can express the current as a function of voltage:
+where $R$ is the resistance. This equation shows that the voltage is directly proportional to the current. Equivalently, one can express the current as a function of voltage:
 
-i=vR.i = \frac{v}{R}.i=Rv​.
+$$
+i = \frac{v}{R}.
+$$
 
 Whether voltage is treated as a function of current or vice versa, the relationship remains clearly linear, as the slope of the V–I curve is constant. In biomedical imaging systems, resistors are used to control signal amplitudes, set biasing conditions in sensors, and limit current to protect sensitive components. Their predictable linear behavior makes them essential for precise and stable circuit operation.
 
@@ -447,11 +451,15 @@ Whether voltage is treated as a function of current or vice versa, the relations
 
 A capacitor stores electrical charge and exhibits a V–I relationship that depends on the time rate of change of current or voltage. The voltage across a capacitor is related to the accumulated charge by
 
-v(t)=1C∫t0ti(τ) dτ+v(t0),v(t) = \frac{1}{C} \int_{t_0}^{t} i(\tau) \, d\tau + v(t_0),v(t)=C1​∫t0​t​i(τ)dτ+v(t0​),
+$$
+v(t) = \frac{1}{C} \int_{t_0}^{t} i(\tau)\, d\tau + v(t_0)
+$$
 
-where CCC is the capacitance, i(τ)i(\tau)i(τ) is the current, and v(t0)v(t_0)v(t0​) is the initial voltage at the start of the integration period. Conversely, the current through a capacitor is related to the rate of change of voltage:
+where $C$ is the capacitance, $i(\tau)$ is the current, and $v(t_0)$ is the initial voltage at the start of the integration period. Conversely, the current through a capacitor is related to the rate of change of voltage:
 
-i(t)=Cdv(t)dt.i(t) = C \frac{dv(t)}{dt}.i(t)=Cdtdv(t)​.
+$$
+i(t) = C \frac{dv(t)}{dt}.
+$$
 
 These equations reflect the fact that a capacitor accumulates electrical charge over time, and the current depends on how rapidly the voltage changes. Capacitors are widely used in medical imaging electronics to stabilize power supplies and smooth analog signals before they are converted into digital data. For example, in CT or MRI systems, capacitors filter high-frequency noise and provide consistent voltage levels to sensitive detectors and amplifiers, ensuring accurate measurements and reducing artifacts in images.
 
@@ -459,11 +467,15 @@ These equations reflect the fact that a capacitor accumulates electrical charge 
 
 An inductor opposes sudden changes in current, storing energy in a magnetic field. Its V–I relationships are complementary to those of capacitors. The voltage across an inductor is proportional to the rate of change of current:
 
-v(t)=Ldi(t)dt,v(t) = L \frac{di(t)}{dt},v(t)=Ldtdi(t)​,
+$$
+v(t) = L \frac{di(t)}{dt}
+$$
 
-where LLL is the inductance. Conversely, the current through an inductor depends on the integral of voltage over time:
+where $L$ is the inductance. Conversely, the current through an inductor depends on the integral of voltage over time:
 
-i(t)=1L∫t0tv(τ) dτ+i(t0).i(t) = \frac{1}{L} \int_{t_0}^{t} v(\tau) \, d\tau + i(t_0).i(t)=L1​∫t0​t​v(τ)dτ+i(t0​).
+$$
+i(t) = \frac{1}{L} \int_{t_0}^{t} v(\tau)\, d\tau + i(t_0)
+$$
 
 Unlike capacitors, which resist sudden voltage changes, inductors resist sudden changes in current. This property allows the current to build gradually rather than instantaneously, which helps smooth and stabilize electrical signals. In medical imaging equipment such as MRI machines, inductors are crucial for maintaining steady currents in coils and amplifiers, preventing spikes or fluctuations that could distort signals or damage sensitive hardware.
 
@@ -473,25 +485,31 @@ Resistors, capacitors, and inductors illustrate different aspects of electrical 
 
 2.31 Shift-Invariant Linear Systems
 
-A shift-invariant linear system is a system in which a shift in the input signal results in an equivalent shift in the output signal, without changing the shape or characteristics of the response. In other words, the system’s behavior does not depend on the absolute position of the input in time or space; it responds in the same way regardless of when or where the input occurs. Mathematically, if the system is represented by an operator LLL and produces an output w(t)w(t)w(t) for an input v(t)v(t)v(t), shift invariance is expressed as
+A shift-invariant linear system is a system in which a shift in the input signal results in an equivalent shift in the output signal, without changing the shape or characteristics of the response. In other words, the system’s behavior does not depend on the absolute position of the input in time or space; it responds in the same way regardless of when or where the input occurs. Mathematically, if the system is represented by an operator $L$ and produces an output $w(t)$ for an input $v(t)$, shift invariance is expressed as
 
-v(t−τ)→Lw(t−τ),v(t - \tau) \xrightarrow{L} w(t - \tau),v(t−τ)L​w(t−τ),
+$$
+v(t - \tau) \xrightarrow{L} w(t - \tau)
+$$
 
 or equivalently,
 
-L[v(t−τ)]=w(t−τ),L[v(t - \tau)] = w(t - \tau),L[v(t−τ)]=w(t−τ),
+$$
+L[v(t - \tau)] = w(t - \tau)
+$$
 
-where τ\tauτ is the shift in the input signal.
+where $\tau$ is the shift in the input signal.
 
 A real-world example of a shift-invariant system is an audio amplifier. If an audio signal is delayed by a few seconds before being input, the amplified output is the same waveform delayed by the same amount. The amplifier does not change the tone or amplitude of the signal based on the time of arrival; it treats all inputs consistently, simply producing a shifted version of the output.
 
-Shift invariance provides several benefits in medical imaging. Imaging systems often measure signals sequentially in time or across spatial coordinates, such as the acquisition of slices in a CT scanner or echoes in MRI. Shift invariance ensures that the system processes each part of the signal consistently, making the response predictable and allowing image reconstruction algorithms to assume uniform behavior across time or space. This property is crucial for techniques like convolution-based filtering, deblurring, and tomographic reconstruction, which rely on the output being a shifted version of the input when the input itself is shifted.
+Shift invariance provides several benefits in medical imaging. Imaging systems often measure signals sequentially in time or across spatial coordinates, such as the acquisition of slices in a a CT scanner or echoes in MRI. Shift invariance ensures that the system processes each part of the signal consistently, making the response predictable and allowing image reconstruction algorithms to assume uniform behavior across time or space. This property is crucial for techniques like convolution-based filtering, deblurring, and tomographic reconstruction, which rely on the output being a shifted version of the input when the input itself is shifted.
 
-Shift invariance can also be expressed in the spatial or general functional domain. For a function f(x)f(x)f(x) processed by a system to produce output g(x)g(x)g(x), the property is written as
+Shift invariance can also be expressed in the spatial or general functional domain. For a function $f(x)$ processed by a system to produce output $g(x)$, the property is written as
 
-f(x−a)→Lg(x−a),f(x - a) \xrightarrow{L} g(x - a),f(x−a)L​g(x−a),
+$$
+f(x - a) \xrightarrow{L} g(x - a)
+$$
 
-where a shift aaa in the input produces the same shift in the output. This general form applies to both time-domain signals and spatial-domain imaging. For instance, in MRI, moving the imaging slice slightly along one axis shifts the measured signals in a predictable way without altering their shape, which is a direct manifestation of spatial shift invariance.
+where a shift `a` in the input produces the same shift in the output. This general form applies to both time-domain signals and spatial-domain imaging. For instance, in MRI, moving the imaging slice slightly along one axis shifts the measured signals in a predictable way without altering their shape, which is a direct manifestation of spatial shift invariance.
 
 Shift invariance is sometimes referred to as temporal invariance when applied in the time domain or spatial invariance when applied in imaging coordinates. In all cases, the key idea is that the system’s behavior depends only on the form of the input, not its location. This property greatly simplifies analysis and processing because linear operations, such as convolution and filtering, can be applied universally across all parts of the signal or image.
 
@@ -505,9 +523,11 @@ Modern computing has made it possible to study and simulate nonlinear systems nu
 
 A classical example of a nonlinear system is the logistic map, a mathematical model commonly used in population dynamics. The logistic map is expressed as
 
-xn+1=rxn(1−xn),x_{n+1} = r x_n (1 - x_n),xn+1​=rxn​(1−xn​),
+$$
+x_{n+1} = r \, x_n \, (1 - x_n),
+$$
 
-where xnx_nxn​ represents the population at generation nnn (normalized to the maximum capacity of the environment), and rrr is the growth rate parameter. The term 1−xn1 - x_n1−xn​ accounts for environmental limitations: as the population approaches the maximum capacity, growth slows due to scarcity of resources.
+where $x_n$ represents the population at generation $n$ (normalized to the maximum capacity of the environment), and $r$ is the growth rate parameter. The term $1 - x_n$ accounts for environmental limitations: as the population approaches the maximum capacity, growth slows due to scarcity of resources.
 
 The logistic map demonstrates how complex behaviors emerge from a simple nonlinear equation. Depending on the value of the growth rate rrr, the population may stabilize at a fixed value, oscillate between multiple values, or exhibit chaotic fluctuations where small changes in initial conditions lead to vastly different outcomes. This model reflects how natural systems regulate themselves and illustrates the rich variety of patterns that can arise in nonlinear systems.
 
