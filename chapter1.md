@@ -1,4 +1,4 @@
-Chapter 1: Foundations of Biomedical Imaging: Principles, Modalities, and Emerging Technologies
+# **Chapter 1: Foundations of Biomedical Imaging: Principles, Modalities, and Emerging Technologies**
 
 1.1 The Role and Importance of Medical Imaging
 
