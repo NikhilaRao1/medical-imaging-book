@@ -22,7 +22,7 @@ A mapping describes how each element of the domain is associated with an element
 
 2.4 Linear Functions
 
-A linear function is a function in which the output changes proportionally with the input. It is commonly expressed in the form $f(x) = mx + b$, where the slope $( m ) determines the rate of change and the intercept $( b ) defines the output when the input is zero. Linear functions are among the simplest mathematical models used in engineering and science.
+A linear function is a function in which the output changes proportionally with the input. It is commonly expressed in the form $f(x) = mx + b$, where the slope $( m )$ determines the rate of change and the intercept $( b )$ defines the output when the input is zero. Linear functions are among the simplest mathematical models used in engineering and science.
 
 In bioimaging systems, linear functions are frequently used to model sensor responses and signal amplification. For example, an increase in light intensity detected by a photodetector may produce a proportional increase in electrical voltage within a linear operating range. Linear models are particularly useful because they allow for straightforward analysis and interpretation of system behavior.
 
