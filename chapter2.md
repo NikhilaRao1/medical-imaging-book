@@ -147,6 +147,10 @@ Additivity describes how a system responds to the sum of two inputs. A system is
 
 L(v1(t)+v2(t))=L(v1(t))+L(v2(t)).L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t)).L(v1​(t)+v2​(t))=L(v1​(t))+L(v2​(t)).
 
+$$
+L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t))
+$$
+
 This concept can be illustrated using function notation. If an input function f1(x)f_1(x)f1​(x) is processed by a system HHH to produce an output K1(x)K_1(x)K1​(x), and another input f2(x)f_2(x)f2​(x) produces an output K2(x)K_2(x)K2​(x), then the combined input f1(x)+f2(x)f_1(x) + f_2(x)f1​(x)+f2​(x) must produce the combined output K1(x)+K2(x)K_1(x) + K_2(x)K1​(x)+K2​(x). Symbolically,
 
 f1(x)→H[f1(x)]→K1(x),f_1(x) \rightarrow H[f_1(x)] \rightarrow K_1(x),f1​(x)→H[f1​(x)]→K1​(x), f2(x)→H[f2(x)]→K2(x),f_2(x) \rightarrow H[f_2(x)] \rightarrow K_2(x),f2​(x)→H[f2​(x)]→K2​(x), f1(x)+f2(x)→H[f1(x)+f2(x)]→K1(x)+K2(x).f_1(x) + f_2(x) \rightarrow H[f_1(x) + f_2(x)] \rightarrow K_1(x) + K_2(x).f1​(x)+f2​(x)→H[f1​(x)+f2​(x)]→K1​(x)+K2​(x).
