@@ -262,31 +262,44 @@ This result confirms that homogeneous functions must be odd functions, a propert
 
 2.24 Constructing Additivity from Homogeneity
 
-To demonstrate how additivity can be derived from homogeneity in continuous systems, consider two inputs x1x_1x1​ and x2x_2x2​ defined as scaled versions of a common variable xxx, such that
+To demonstrate how additivity can be derived from homogeneity in continuous systems, consider two inputs \(x_1\) and \(x_2\) defined as scaled versions of a common variable \(x\), such that
 
-x1=α1x,x2=α2x,x_1 = \alpha_1 x, \quad x_2 = \alpha_2 x,x1​=α1​x,x2​=α2​x,
+$$
+x_1 = \alpha_1 x, \qquad x_2 = \alpha_2 x,
+$$
 
-with x≠0x \neq 0x=0. These definitions allow both inputs to be expressed in terms of a single reference variable.
+with \(x \neq 0\). These definitions allow both inputs to be expressed in terms of a single reference variable.
 
 Applying the function to the sum of the inputs yields
 
-f(x1+x2)=f(α1x+α2x)=f((α1+α2)x).f(x_1 + x_2) = f(\alpha_1 x + \alpha_2 x) = f((\alpha_1 + \alpha_2)x).f(x1​+x2​)=f(α1​x+α2​x)=f((α1​+α2​)x).
+$$
+f(x_1 + x_2) = f(\alpha_1 x + \alpha_2 x) = f((\alpha_1 + \alpha_2)x).
+$$
 
 Using homogeneity, this becomes
 
-f((α1+α2)x)=(α1+α2)f(x).f((\alpha_1 + \alpha_2)x) = (\alpha_1 + \alpha_2)f(x).f((α1​+α2​)x)=(α1​+α2​)f(x).
+$$
+f((\alpha_1 + \alpha_2)x) = (\alpha_1 + \alpha_2)f(x).
+$$
 
 The right-hand side can be separated as
 
-(α1+α2)f(x)=α1f(x)+α2f(x).(\alpha_1 + \alpha_2)f(x) = \alpha_1 f(x) + \alpha_2 f(x).(α1​+α2​)f(x)=α1​f(x)+α2​f(x).
+$$
+(\alpha_1 + \alpha_2)f(x) = \alpha_1 f(x) + \alpha_2 f(x).
+$$
 
 Applying homogeneity again gives
 
-α1f(x)=f(α1x),α2f(x)=f(α2x),\alpha_1 f(x) = f(\alpha_1 x), \quad \alpha_2 f(x) = f(\alpha_2 x),α1​f(x)=f(α1​x),α2​f(x)=f(α2​x),
+$$
+\alpha_1 f(x) = f(\alpha_1 x), \qquad
+\alpha_2 f(x) = f(\alpha_2 x).
+$$
 
-which leads to
+Substituting these results back yields
 
-f(x1+x2)=f(x1)+f(x2).f(x_1 + x_2) = f(x_1) + f(x_2).f(x1​+x2​)=f(x1​)+f(x2​).
+$$
+f(x_1 + x_2) = f(x_1) + f(x_2).
+$$
 
 This confirms that additivity can be constructed directly from homogeneity under continuity assumptions.
 
@@ -304,25 +317,37 @@ Although additivity and homogeneity together define linearity, additivity alone 
 
 Consider the function
 
-f(z)=z∗f(z) = z^*f(z)=z∗
+$$
+f(z) = z^*
+$$
 
-where z=a+ibz = a + ibz=a+ib is a complex number and z∗=a−ibz^* = a - ibz∗=a−ib denotes its complex conjugate. This function maps each complex number to its conjugate and is commonly encountered in complex analysis and signal processing.
+where \(z = a + ib\) is a complex number and \(z^* = a - ib\) denotes its complex conjugate.  
+This function maps each complex number to its conjugate and is commonly encountered in complex analysis and signal processing.
 
-To test additivity, let z1z_1z1​ and z2z_2z2​ be complex numbers. Then,
+To test additivity, let \(z_1\) and \(z_2\) be complex numbers. Then
 
-f(z1+z2)=(z1+z2)∗=z1∗+z2∗=f(z1)+f(z2).f(z_1 + z_2) = (z_1 + z_2)^* = z_1^* + z_2^* = f(z_1) + f(z_2).f(z1​+z2​)=(z1​+z2​)∗=z1∗​+z2∗​=f(z1​)+f(z2​).
+$$
+f(z_1 + z_2) = (z_1 + z_2)^* = z_1^* + z_2^* = f(z_1) + f(z_2).
+$$
 
-This confirms that the function satisfies additivity, since the conjugate of a sum equals the sum of the conjugates.
+This confirms that the function satisfies **additivity**, since the conjugate of a sum equals the sum of the conjugates.
 
-However, homogeneity does not hold for this function. For a complex scalar α\alphaα,
+However, homogeneity does not hold for this function. For a complex scalar $\alpha$,
 
-f(αz)=(αz)∗=α∗z∗,f(\alpha z) = (\alpha z)^* = \alpha^* z^*,f(αz)=(αz)∗=α∗z∗,
+$$
+f(\alpha z) = (\alpha z)^* = \alpha^* z^*
+$$
 
-which is not equal to
+which is **not equal to**
 
-αz∗=αf(z)\alpha z^* = \alpha f(z)αz∗=αf(z)
+$$
+\alpha z^* = \alpha f(z)
+$$
 
-unless α\alphaα is real. Because complex conjugation also conjugates the scalar, the scaling factor is altered. This violation of homogeneity demonstrates that additivity alone is insufficient to establish linearity.
+unless $\alpha$ is real.
+
+Because complex conjugation also conjugates the scalar, the scaling factor is altered.  
+This violation of homogeneity demonstrates that additivity alone is insufficient to establish linearity.
 
 This example shows that a system can be additive without being homogeneous. Therefore, additivity does not imply homogeneity, and both conditions must be checked independently when determining whether a system is linear.
 
@@ -330,24 +355,37 @@ This example shows that a system can be additive without being homogeneous. Ther
 
 Homogeneity alone is also insufficient to guarantee linearity, as demonstrated by a counterexample involving real-valued functions. Consider the function
 
-f(x)={m1x,if x is rational,m2x,if x is irrational,f(x) = \begin{cases} m_1 x, & \text{if } x \text{ is rational}, \\ m_2 x, & \text{if } x \text{ is irrational}, \end{cases}f(x)={m1​x,m2​x,​if x is rational,if x is irrational,
+$$
+f(x) =
+\begin{cases}
+m_1 x, & \text{if } x \text{ is rational}, \\
+m_2 x, & \text{if } x \text{ is irrational}.
+\end{cases}
+$$
 ​
-where m1m_1m1​ and m2m_2m2​ are rational constants with m1≠m2m_1 \neq m_2m1​=m2​. This function behaves differently depending on whether the input is rational or irrational.
-Assume that the scalar domain consists only of rational numbers. Under rational scaling, the rationality or irrationality of a number does not change. Therefore, for any rational scalar α\alphaα,
+where $m_1$ and $m_2$ are rational constants with $m_1 \ne m_2$. This function behaves differently depending on whether the input is rational or irrational.
 
-f(αx)=αf(x),f(\alpha x) = \alpha f(x),f(αx)=αf(x),
+Assume that the scalar domain consists only of rational numbers. Under rational scaling, the rationality or irrationality of a number does not change. Therefore, for any rational scalar $\alpha$,
+
+$$
+f(\alpha x) = \alpha f(x)
+$$
 
 which confirms that the function satisfies homogeneity under this restricted scalar domain.
 
-However, additivity fails for this function. Consider two irrational numbers x1x_1x1​ and x2x_2x2​ whose sum is rational. Then,
+However, additivity fails for this function. Consider two irrational numbers $x_1$ and $x_2$ whose sum is rational. Then,
 
-f(x1+x2)=m1(x1+x2),f(x_1 + x_2) = m_1(x_1 + x_2),f(x1​+x2​)=m1​(x1​+x2​),
+$$
+f(x_1 + x_2) = m_1(x_1 + x_2)
+$$
 
-since x1+x2x_1 + x_2x1​+x2​ is rational. On the other hand,
+since $x_1 + x_2$ is rational. On the other hand,
 
-f(x1)+f(x2)=m2x1+m2x2=m2(x1+x2).f(x_1) + f(x_2) = m_2 x_1 + m_2 x_2 = m_2(x_1 + x_2).f(x1​)+f(x2​)=m2​x1​+m2​x2​=m2​(x1​+x2​).
+$$
+f(x_1) + f(x_2) = m_2 x_1 + m_2 x_2 = m_2(x_1 + x_2)
+$$
 
-Because m1≠m2m_1 \neq m_2m1​=m2​, these expressions are not equal, and additivity is violated.
+Because $m_1 \ne m_2$, these expressions are not equal, and additivity is violated.
 
 This example demonstrates that homogeneity does not imply additivity. A system may scale inputs correctly while failing to preserve sums, which disqualifies it from being linear.
 
