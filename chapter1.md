@@ -1,6 +1,6 @@
 # **Chapter 1: Foundations of Biomedical Imaging: Principles, Modalities, and Emerging Technologies**
 
-## 1.1 The Role and Importance of Medical Imaging
+## **1.1 The Role and Importance of Medical Imaging**
 
 Medical imaging plays a foundational role in modern healthcare by allowing clinicians to look inside the human body to diagnose, monitor, and treat disease. It transforms invisible biological processes into visible information, helping doctors detect conditions early, guide interventions, and evaluate how well treatments are working. From identifying a fractured bone to tracking the progression of cancer, medical imaging directly contributes to saving lives and improving patient outcomes.
 
