@@ -10,20 +10,20 @@ As humans, we cannot see through solid objects. Medical imaging effectively give
 
 The noninvasive nature of medical imaging is one of its greatest benefits in healthcare. It enables repeated measurements over time, supports preventive medicine, and allows clinicians to make informed decisions quickly and safely. In short, medical imaging bridges the gap between what we can observe externally and what is happening internally, making it an indispensable tool in modern medicine and a cornerstone of bioimaging research.
 
-1.2 Discovery of X-Rays and the Origins of Medical Imaging
+## **1.2 Discovery of X-Rays and the Origins of Medical Imaging**
 
 The field of medical imaging began in 1895 with the discovery of X-rays by Wilhelm Conrad Röntgen. While experimenting with cathode rays, Röntgen observed that an unknown form of radiation could pass through solid objects and expose photographic plates. He called this radiation “X-rays,” using X to indicate their unknown nature. This discovery marked a turning point in both physics and medicine, as it revealed a way to see inside the human body without surgery.
 
 One of the most famous images in scientific history is the X-ray of Röntgen’s wife’s hand. The image clearly showed her bones and wedding ring, making the invisible visible for the first time. This striking demonstration immediately captured public and medical attention and showed the immense diagnostic potential of X-rays. Within just a few years, hospitals around the world began adopting X-ray imaging.
 
-1.3 X-Ray Radiography
+## **1.3 X-Ray Radiography**
 
 X-ray radiography is one of the simplest and most widely used medical imaging techniques. In this method, X-rays pass through the body and are absorbed differently by various tissues. Dense materials such as bone absorb more X-rays and appear bright on the image, while softer tissues absorb fewer X-rays and appear darker. This contrast makes X-ray radiography especially useful for detecting broken bones, joint problems, lung conditions, and certain tumors.
 
 However, X-ray radiography has important limitations. The resulting image is two-dimensional, meaning that all structures along the path of the X-ray beam are compressed into a single flat image. As a result, overlapping tissues can obscure important details, making it difficult to clearly distinguish individual structures. This lack of depth information motivated the development of more advanced imaging techniques, such as computed tomography (CT), which can separate structures in three dimensions.
 Despite its limitations, X-ray radiography remains a cornerstone of medical imaging due to its speed, accessibility, and diagnostic value, and it laid the foundation for the entire field of bioimaging.
 
-1.4 X-Ray Computed Tomography (CT)
+## **1.4 X-Ray Computed Tomography (CT)**
 
 While conventional X-ray radiography is fast and effective, it struggles when many anatomical structures are packed closely together. Because all tissues are projected onto a single 2D image, overlapping bones and organs can obscure important details. This limitation becomes especially problematic when imaging complex regions of the body such as the brain, chest, or abdomen.
 
@@ -33,7 +33,7 @@ In a CT scan, an X-ray source and detector rotate around the patient, collecting
 
 The key advantage of CT is its ability to separate overlapping tissues. Structures that would be indistinguishable in a standard X-ray become clearly visible because each slice represents a specific depth within the body. This makes CT especially powerful for detecting tumors, internal bleeding, organ damage, and complex fractures. As a result, CT imaging represents a major milestone in bioimaging, bridging the gap between simple projection imaging and true 3D visualization of human anatomy.
 
-1.5 The Biomedical Imaging Spectrum
+## **1.5 The Biomedical Imaging Spectrum**
 
 Biomedical imaging techniques span a wide range of physical phenomena, and the type of information they provide is strongly determined by where they fall on the electromagnetic spectrum—or, more broadly, the physical spectrum. Different forms of energy interact with biological tissue in different ways, revealing complementary structural, functional, and molecular information. Understanding this spectrum is key to understanding why so many distinct imaging modalities exist.
 
@@ -47,7 +47,7 @@ Outside the electromagnetic spectrum altogether, ultrasound imaging uses high-fr
 
 No single imaging technique can capture all aspects of biology. As a result, multimodal imaging has become increasingly important. By combining information from multiple imaging modalities—such as PET with CT or MRI—clinicians and researchers can obtain a more complete picture that integrates anatomy, function, and molecular activity. This synergy lies at the heart of modern bioimaging and continues to drive innovation in the field.
 
-1.6 Tomography and Inversion
+## **1.6 Tomography and Inversion**
 
 At the heart of many bioimaging techniques is the idea of tomography, which relies on collecting data from many different angles. Each measurement is a projection—a compressed view of the internal structures along a particular direction. On its own, a single projection contains limited information, much like a shadow that flattens a three-dimensional object into two dimensions.
 
@@ -55,7 +55,7 @@ Tomographic imaging works by acquiring a large number of these projections from 
 
 Inversion is not unique to CT; it appears across biomedical imaging, including PET, SPECT, and MRI. While the physics of data acquisition differs between modalities, the unifying concept is the same: indirect measurements are transformed into meaningful images through computation.
 
-1.7 Blurring, Resolution, and Deblurring
+## **1.7 Blurring, Resolution, and Deblurring**
 
 No imaging system is perfect. Even when the internal structure is reconstructed correctly, images often appear blurred. This blur arises from physical limitations such as detector size, wave diffraction, motion, and noise. A useful way to describe this effect is through the point spread function (PSF), which characterizes how a single point object appears in the image. Instead of a perfect point, it spreads into a small blob.
 
@@ -64,20 +64,21 @@ Deblurring aims to undo the effects of this convolution and recover a sharper es
 
 Together, tomography, inversion, and deblurring form the mathematical backbone of biomedical imaging, turning indirect, imperfect measurements into clear and clinically meaningful images.
 
-1.8 Convolution, Fourier Analysis, and Inversion
+## **1.8 Convolution, Fourier Analysis, and Inversion**
 
 A central mathematical idea in biomedical imaging is the relationship between convolution and the Fourier domain. In the spatial or time domain, blurring is commonly modeled as a convolution between the true object and the imaging system’s point spread function. While convolution can be difficult to analyze directly, it becomes much simpler when viewed through the lens of Fourier analysis.
 
 In the Fourier domain, convolution turns into multiplication. This powerful result means that instead of dealing with a complex integral in space or time, we can work with straightforward multiplications in frequency space. This insight underlies many reconstruction and deblurring algorithms in medical imaging. By transforming data into the Fourier domain, correcting or compensating for system effects, and transforming back, imaging systems can recover clearer and more accurate representations of internal structures.
 
 These ideas connect directly to inversion. Inversion starts with the outcome—the measured image or signal—and infers the underlying cause: the original biological structure or process. Whether reconstructing a CT slice from projections or deblurring an optical image, inversion reframes imaging as a problem of reasoning backward from data to source. This perspective is a unifying theme across nearly all biomedical imaging modalities.
-1.9 Biomedical Imaging as an Interdisciplinary
+
+## **1.9 Biomedical Imaging as an Interdisciplinary**
 
 Medical imaging is inherently interdisciplinary, sitting at the intersection of multiple scientific and technical domains. Mathematics provides the language of inversion, reconstruction, and signal processing. Physics governs how energy—whether X-rays, radio waves, light, or sound—interacts with tissue. Chemistry enables contrast agents and molecular probes. Biology explains the structure and function of tissues being imaged, while medicine defines the clinical questions that imaging must answer. Engineering brings all of these elements together into practical, reliable imaging systems.
 
 This convergence is the foundation of biomedical engineering, a field that explicitly integrates biology and medicine with engineering principles. As healthcare becomes increasingly technology-driven—relying on advanced imaging, data analysis, and computational tools—the demand for biomedical engineers continues to grow. Biomedical imaging exemplifies this trend, offering opportunities to work at the cutting edge of science while directly impacting patient care.
 
-1.10 X-Ray Imaging, the Radon Transform, and Fourier-Based Reconstruction
+## **1.10 X-Ray Imaging, the Radon Transform, and Fourier-Based Reconstruction**
 
 X-ray imaging begins with a line integral model. As X-rays pass through an object, they are attenuated by the material along their path. The detector measures the energy (or intensity) of the transmitted X-ray photons, and this measurement corresponds mathematically to an integral of the object’s attenuation properties along the X-ray path. Each measurement therefore captures cumulative information along a straight line through the object.
 
@@ -120,7 +121,7 @@ A remarkable result—known as the Fourier slice theorem—states that the Fouri
 As the acquisition system rotates and projections are collected over many angles, these frequency-domain slices fill up the entire two-dimensional Fourier space of the object. Once sufficient coverage of this Fourier space is obtained, the original image can be reconstructed by applying the inverse Fourier transform.
 This framework highlights a deep connection between data acquisition and image reconstruction. The forward process—collecting X-ray projections as line integrals—is mathematically linked to the inverse process—reconstructing the image—through Fourier analysis. Understanding this relationship is fundamental to biomedical imaging, as it reveals how physical measurements, mathematical transforms, and computational algorithms work together to produce meaningful images of the human body.
 
-1.11 Positron Emission Tomography (PET): Imaging Function, Not Just Structure
+## **1.11 Positron Emission Tomography (PET): Imaging Function, Not Just Structure**
 
 Positron emission tomography (PET) is a medical imaging technique designed to visualize functional activity inside the body rather than detailed anatomy. Instead of showing what organs look like, PET reveals how tissues are behaving—such as how actively they are consuming energy or participating in metabolic processes. This makes PET especially powerful for studying cancer, brain function, and heart disease.
 
@@ -133,7 +134,7 @@ As with CT, image formation in PET is fundamentally an inversion problem. The me
 
 A key strength of PET is its complementarity with CT. CT provides high-resolution anatomical detail, clearly showing the shapes and boundaries of organs, while PET reveals biological function, such as metabolism occurring within those structures. Together, they allow clinicians to see not only where structures are, but what they are doing, making PET a cornerstone of functional bioimaging.
 
-1.12 Functional vs. Anatomical Imaging
+## **1.12 Functional vs. Anatomical Imaging**
 
 Medical imaging techniques can be broadly divided into anatomical imaging and functional imaging, based on the type of information they provide. This distinction is central to understanding why multiple imaging modalities are often used together in clinical practice.
 
@@ -143,7 +144,7 @@ In contrast, nuclear imaging techniques, such as PET and SPECT, are forms of fun
 
 The key goal of functional imaging is to understand where biological activity is occurring in the body and how much activity is present. Instead of visualizing anatomy alone, functional imaging maps processes like metabolism, perfusion, and receptor binding. When combined with anatomical imaging, this functional information provides a much more complete picture of health and disease, linking structure to function in a way that is essential for modern bioimaging.
 
-1.13 Positron Emission Tomography (PET)
+## **1.13 Positron Emission Tomography (PET)**
 
 Positron Emission Tomography (PET) is a powerful imaging technique that visualizes biological function rather than merely anatomical structure. PET is widely used to study physiological processes across the body, providing insight into metabolism, cancer activity, brain function, and heart conditions. For example, PET can track how tissues consume energy or nutrients, detect tumors based on their increased metabolic activity, map regions of the brain involved in cognition or disease, and assess blood flow and tissue viability in the heart. By capturing dynamic biological processes, PET complements anatomical imaging techniques such as CT and MRI.
 
@@ -151,7 +152,7 @@ PET imaging relies on the administration of radiotracers, which are biologically
 
 The signals collected by the PET scanner are processed using computational algorithms to generate tomographic three-dimensional images. These images display the distribution and intensity of the tracer, effectively revealing where and how tissues are functioning in real time. Unlike CT, which primarily provides structural information, PET highlights active physiology, making it an indispensable tool in clinical applications such as oncology, neurology, and cardiology. By combining functional insight with high-resolution imaging, PET plays a critical role in diagnosis, treatment planning, and monitoring of disease progression.
 
-1.14 Single Photon Emission Computed Tomography (SPECT)
+## **1.14 Single Photon Emission Computed Tomography (SPECT)**
 
 Single Photon Emission Computed Tomography (SPECT) is a nuclear imaging technique designed to visualize functional activity within the body, much like PET, but it differs in how radioactive decay is detected. In SPECT, the radiotracer emits single, unpaired gamma-ray photons. These photons are emitted randomly and individually, and a collimator is used to ensure that only photons traveling along specific directions reach the detector. Each detected photon provides information about its path through the body, which contributes to the overall dataset used for image reconstruction.
 
@@ -159,7 +160,7 @@ The reconstruction process in SPECT involves collecting projection images from m
 
 Although SPECT generally has lower spatial resolution compared to PET due to the single-photon detection mechanism, it remains a valuable tool for functional imaging. Both SPECT and PET produce tomographic images that reveal the distribution of radiotracers inside the body. These images allow clinicians to observe physiological activity that cannot be captured by purely anatomical imaging methods, making SPECT an important modality for diagnosing and monitoring disease.
 
-1.15 Magnetic Resonance Imaging (MRI)
+## **1.15 Magnetic Resonance Imaging (MRI)**
 
 Magnetic Resonance Imaging (MRI) is fundamentally different from X-ray and nuclear imaging because it does not rely on ionizing radiation. Instead, MRI uses strong magnetic fields and radio-frequency (RF) signals to probe the body’s internal structures. When a patient is placed in a strong magnetic field, the hydrogen nuclei (protons) in the body align with the field. An RF pulse is then applied to disrupt this alignment, and as the protons relax back to their original orientation, they emit RF signals that are measured by the scanner. These signals are processed using computational algorithms to generate detailed images of internal anatomy.
 
@@ -167,7 +168,7 @@ MRI is particularly powerful because it is highly sensitive to water content and
 
 Unlike CT, which is optimized for detailed structural imaging, or PET/SPECT, which primarily visualizes functional processes, MRI provides both high-resolution anatomical images and functional information in a single modality. Its ability to distinguish soft tissues with exquisite contrast, coupled with the absence of ionizing radiation, makes MRI a cornerstone of modern biomedical imaging. Today, MRI is widely used in neurology, cardiology, and musculoskeletal medicine, offering unparalleled insight into both the structure and function of tissues in the human body.
 
-1.16 Ultrasound Imaging
+## **1.16 Ultrasound Imaging**
 
 Ultrasound imaging is one of the most widely used medical imaging techniques due to its affordability, safety, speed, and versatility. It has become increasingly important in point-of-care imaging, where clinicians need rapid, real-time information at the bedside or in outpatient settings. Unlike X-ray, CT, or nuclear imaging, ultrasound uses mechanical sound waves rather than electromagnetic radiation to visualize internal structures.
 
@@ -177,7 +178,7 @@ Ultrasound offers several key advantages. It is completely non-invasive and does
 
 Looking toward the future, AI-enhanced ultrasound holds significant potential. Machine learning algorithms can assist with image interpretation, automate measurements, and improve diagnostic accuracy, making ultrasound even more valuable as a frontline imaging modality in modern healthcare. Its combination of safety, speed, and real-time capability ensures that ultrasound will remain a core tool in both clinical and point-of-care settings.
 
-1.17 Optical Imaging
+## **1.17 Optical Imaging**
 
 Optical imaging is a biomedical imaging technique that uses visible and infrared light to probe biological tissues. Unlike X-ray or nuclear imaging, which provide structural or metabolic information, optical imaging focuses on molecular and cellular-level interactions, enabling researchers and clinicians to study biological processes at a microscopic scale. Its unique strengths include the ability to extract specific biological signatures and observe fine details that are otherwise invisible to traditional imaging methods.
 
@@ -185,7 +186,7 @@ One important form of optical imaging is luminescence imaging, where proteins, g
 
 Optical imaging faces significant challenges, particularly in the inverse reconstruction, because light scatters and absorbs as it travels through tissue, making it difficult to accurately determine the origin of the signal. Other optical techniques extend the capabilities of this modality. Fluorescence tomography uses externally excited light to image specific molecular targets, while Optical Coherence Tomography (OCT) provides high-resolution structural imaging, commonly used in retinal imaging. Together, these techniques allow optical imaging to provide both functional and structural information at scales ranging from single cells to whole organs, offering a complementary perspective to other biomedical imaging modalities.
 
-1.18 Image Processing and Analysis
+## **1.18 Image Processing and Analysis**
 
 Acquiring an image is only the first step in biomedical imaging; image processing and analysis are essential to extract meaningful information. Raw images often contain noise, overlapping structures, or low contrast, making it difficult to interpret them directly. By applying computational techniques, clinicians and researchers can enhance image quality, isolate regions of interest, and quantify biological features.
 
@@ -195,7 +196,7 @@ Enhancement techniques improve image quality for better interpretation. Methods 
 
 In this course, the focus is on bioimaging and bioinstrumentation, with a particular emphasis on tomographic imaging. By understanding both the physics of image formation and the computational tools used for reconstruction and analysis, students gain the skills needed to transform raw imaging data into clinically and scientifically meaningful insights.
 
-1.19 Phenotype vs. Genotype
+## **1.19 Phenotype vs. Genotype**
 
 In biology, it is important to distinguish between genotype and phenotype. The genotype refers to an organism’s genetic makeup, encoded in its DNA, and represents the blueprint of potential traits and biological processes. In contrast, the phenotype encompasses the observable traits, functions, and disease states that result from the interaction of the genotype with the environment. Phenotype includes characteristics such as organ structure, metabolic activity, and physiological responses, all of which can be studied using biomedical imaging.
 
@@ -203,7 +204,7 @@ Biomedical imaging is primarily concerned with the phenotype, providing detailed
 
 A major goal in modern biomedical research is to link genotype to phenotype, bridging the gap between genetic information and observable outcomes. Understanding this relationship forms the foundation for personalized medicine, where treatments and interventions are tailored to an individual’s genetic profile and physiological characteristics. By integrating imaging-based phenotypic data with genetic insights, clinicians can achieve better diagnosis, targeted therapies, and more accurate predictions of disease progression and treatment response.
 
-1.20 AI, Machine Learning, and the Future of Imaging
+## **1.20 AI, Machine Learning, and the Future of Imaging**
 
 Medical imaging is a rapidly evolving field, and its growth is being accelerated by advances in artificial intelligence (AI) and machine learning, particularly deep learning. These technologies offer new ways to process, analyze, and interpret imaging data, enabling improvements that were previously impractical or impossible. AI can enhance image reconstruction, reduce noise and artifacts, and generate higher-quality images from lower doses of radiation or faster acquisition times.
 
