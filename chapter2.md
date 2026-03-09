@@ -1,4 +1,4 @@
-Chapter 2: Signal and System Foundations for Medical Imaging
+# **Chapter 2: Signal and System Foundations for Medical Imaging**
 
 2.1 Introduction
 
