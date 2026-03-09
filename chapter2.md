@@ -59,7 +59,7 @@ In bioimaging and biomedical signal processing, Taylor expansions are commonly u
 
 Linear functions are among the most important mathematical tools used in engineering and medical imaging because of their simplicity and interpretability. In one dimension, a linear function describes how a single input variable maps to a single output variable, typically in the form $f(x) = mx + b$. This type of function is commonly used to model relationships such as signal amplitude as a function of time or sensor output as a function of input intensity.
 
-Two-dimensional linear functions extend this concept by mapping inputs from a two-dimensional domain to outputs. In medical imaging, two-dimensional linear relationships often arise when modeling images, which can be represented as functions of spatial coordinates (x,y)(x, y)(x,y). Linear models in two dimensions are frequently used in image formation, filtering, and reconstruction algorithms.
+Two-dimensional linear functions extend this concept by mapping inputs from a two-dimensional domain to outputs. In medical imaging, two-dimensional linear relationships often arise when modeling images, which can be represented as functions of spatial coordinates $(x,y)$. Linear models in two dimensions are frequently used in image formation, filtering, and reconstruction algorithms.
 
 Linear functions are easy to analyze because their behavior is predictable and well understood. They obey principles such as superposition and scaling, which allow complex problems to be broken down into simpler components. Additionally, linear functions are fast to compute, making them especially well suited for real-time imaging applications where large amounts of data must be processed efficiently.
 
@@ -68,11 +68,19 @@ In medical imaging, linear approximations are widely used even when systems are 
 2.9 Systems, Inputs, and Outputs
 
 A system is a process that takes an input, performs some operation, and produces an output. In mathematical terms, a system can be represented as an operator that acts on an input signal or function. This abstraction allows physical devices, biological processes, and computational algorithms to be described using a common mathematical framework.
-If v(t)v(t)v(t) represents an input signal and w(t)w(t)w(t) represents an output signal, a system can be written as
+If \(v(t)\) represents an input signal and \(w(t)\) represents an output signal, a system can be written as
 
-w(t) = L(v(t))w(t) = L(v(t))w(t) = L(v(t))
+$$
+w(t) = L(v(t))
+$$
 
-where LLL denotes the system operator. In cases where time dependence is not explicitly emphasized, the system may be written more compactly as w=L(v)w = L(v)w=L(v). This notation highlights that the output is determined entirely by how the system processes the input.
+where \(L\) denotes the system operator. In cases where time dependence is not explicitly emphasized, the system may be written more compactly as:
+
+$$
+w = L(v)
+$$
+
+This notation highlights that the output is determined entirely by how the system processes the input.
 
 In medical imaging systems, inputs may include electromagnetic signals, acoustic waves, or electrical measurements, while outputs may be digital images or reconstructed signals. The system performs a sequence of physical and computational operations that transform the input into a usable form. Understanding the relationship between inputs and outputs is essential for designing, analyzing, and improving imaging systems.
 
