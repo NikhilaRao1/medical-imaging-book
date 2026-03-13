@@ -1,4 +1,7 @@
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+---
+layout: default
+title: Chapter 1
+---
 
 # **Chapter 1: Foundations of Biomedical Imaging: Principles, Modalities, and Emerging Technologies**
 
