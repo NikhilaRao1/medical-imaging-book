@@ -86,9 +86,9 @@ X-ray imaging begins with a line integral model. As X-rays pass through an objec
 
 When this process is repeated across many parallel rays, the result is a collection of line integrals that form the Radon transform of the object. If the object is represented as a two-dimensional function 
 
-$$
-f(x, y),
-$$
+\[
+f(x, y)
+\]
 
 then the measured data can be described as a new function 
 
