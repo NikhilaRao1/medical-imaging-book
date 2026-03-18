@@ -23,7 +23,7 @@ The field of medical imaging began in 1895 with the discovery of X-rays by Wilhe
 
 <table align="center">
   <tr>
-    <td>
+    <td align="center">
       <img src="images/handimage.png" alt="Wilhelm Conrad Röntgen X-ray of his wife's hand" width="250">
       <p style="font-size: 0.8em; color: #555;">Figure 1. X-ray image of Wilhelm Conrad Röntgen's wife's hand, 1895.</p>
     </td>
