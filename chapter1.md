@@ -21,6 +21,8 @@ The noninvasive nature of medical imaging is one of its greatest benefits in hea
 
 The field of medical imaging began in 1895 with the discovery of X-rays by Wilhelm Conrad Röntgen. While experimenting with cathode rays, Röntgen observed that an unknown form of radiation could pass through solid objects and expose photographic plates. He called this radiation “X-rays,” using X to indicate their unknown nature. This discovery marked a turning point in both physics and medicine, as it revealed a way to see inside the human body without surgery.
 
+<img src="images/handimage.png" alt="Hand Anatomy Image" width="500">
+
 One of the most famous images in scientific history is the X-ray of Röntgen’s wife’s hand. The image clearly showed her bones and wedding ring, making the invisible visible for the first time. This striking demonstration immediately captured public and medical attention and showed the immense diagnostic potential of X-rays. Within just a few years, hospitals around the world began adopting X-ray imaging.
 
 ## **1.3 X-Ray Radiography**
