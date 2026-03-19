@@ -36,6 +36,15 @@ One of the most famous images in scientific history is the X-ray of Röntgen’s
 
 X-ray radiography is one of the simplest and most widely used medical imaging techniques. In this method, X-rays pass through the body and are absorbed differently by various tissues. Dense materials such as bone absorb more X-rays and appear bright on the image, while softer tissues absorb fewer X-rays and appear darker. This contrast makes X-ray radiography especially useful for detecting broken bones, joint problems, lung conditions, and certain tumors.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/xrays.png" alt="X-ray image of human ribcage" width="250">
+      <p style="font-size: 0.8em; color: #555;">Figure 2. Black-and-white X-ray image showing a human ribcage.</p>
+    </td>
+  </tr>
+</table>
+
 However, X-ray radiography has important limitations. The resulting image is two-dimensional, meaning that all structures along the path of the X-ray beam are compressed into a single flat image. As a result, overlapping tissues can obscure important details, making it difficult to clearly distinguish individual structures. This lack of depth information motivated the development of more advanced imaging techniques, such as computed tomography (CT), which can separate structures in three dimensions.
 Despite its limitations, X-ray radiography remains a cornerstone of medical imaging due to its speed, accessibility, and diagnostic value, and it laid the foundation for the entire field of bioimaging.
 
