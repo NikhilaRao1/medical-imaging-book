@@ -68,7 +68,7 @@ In a CT scan, an X-ray source and detector rotate around the patient, collecting
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/CTbrainscan.png" alt="CT brain scan showing anatomical structures" width="600">
+      <img src="images/CTbrainscan.png" alt="CT brain scan showing anatomical structures" width="400">
       <p style="font-size: 0.8em; color: #555;">Figure 4. CT brain scan showing anatomical structures.</p>
     </td>
   </tr>
