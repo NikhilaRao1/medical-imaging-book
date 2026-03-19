@@ -54,6 +54,15 @@ While conventional X-ray radiography is fast and effective, it struggles when ma
 
 X-ray computed tomography, commonly known as CT, was developed to overcome this challenge. The word tomography comes from the Greek words tomos (slice) and graphein (to write), meaning “imaging by slices.” Instead of producing one flat image, CT creates cross-sectional images—thin slices of the body—that reveal internal structures layer by layer.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/computerizedtomography.png" alt="Computerized Tomography (CT) scan machine" width="250">
+      <p style="font-size: 0.8em; color: #555;">Figure 3. Diagram of a computerized tomography (CT) scanner showing key components. Source: [insert source here].</p>
+    </td>
+  </tr>
+</table>
+
 In a CT scan, an X-ray source and detector rotate around the patient, collecting projection images from many different angles. These multiple measurements capture how X-rays are absorbed along thousands of paths through the body. A computer then uses mathematical reconstruction algorithms to combine this information and generate a detailed image of a single slice. By stacking many slices together, clinicians can visualize the body in three dimensions.
 
 The key advantage of CT is its ability to separate overlapping tissues. Structures that would be indistinguishable in a standard X-ray become clearly visible because each slice represents a specific depth within the body. This makes CT especially powerful for detecting tumors, internal bleeding, organ damage, and complex fractures. As a result, CT imaging represents a major milestone in bioimaging, bridging the gap between simple projection imaging and true 3D visualization of human anatomy.
