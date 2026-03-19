@@ -57,7 +57,7 @@ X-ray computed tomography, commonly known as CT, was developed to overcome this 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/computerizedtomography.png" alt="Computerized Tomography (CT) scan machine" width="250">
+      <img src="images/computerizedtomography.png" alt="Computerized Tomography (CT) scan machine" width="350">
       <p style="font-size: 0.8em; color: #555;">Figure 3. Diagram of a computerized tomography (CT) scanner showing key components. Source: [insert source here].</p>
     </td>
   </tr>
