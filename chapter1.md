@@ -80,6 +80,15 @@ The key advantage of CT is its ability to separate overlapping tissues. Structur
 
 Biomedical imaging techniques span a wide range of physical phenomena, and the type of information they provide is strongly determined by where they fall on the electromagnetic spectrum—or, more broadly, the physical spectrum. Different forms of energy interact with biological tissue in different ways, revealing complementary structural, functional, and molecular information. Understanding this spectrum is key to understanding why so many distinct imaging modalities exist.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/spectrum.png" alt="Electromagnetic spectrum showing imaging modalities" width="600">
+      <p style="font-size: 0.8em; color: #555;">Figure 5. Electromagnetic spectrum indicating where various medical imaging modalities fall based on wavelength and frequency.</p>
+    </td>
+  </tr>
+</table>
+
 At the high-energy end of the spectrum, gamma rays are used in nuclear imaging techniques such as PET and SPECT. These methods do not primarily image anatomy; instead, they visualize physiological and metabolic processes by detecting radioactive tracers inside the body. This makes them especially powerful for studying cancer, brain function, and cardiac health.
 
 Moving to lower energies, radio waves are used in magnetic resonance imaging (MRI). MRI relies on the interaction between radiofrequency signals and nuclear spins in a strong magnetic field, producing highly detailed images of soft tissues. Because it does not use ionizing radiation, MRI is particularly valuable for imaging the brain, muscles, and connective tissues.
