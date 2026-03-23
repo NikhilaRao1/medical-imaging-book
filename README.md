@@ -6,27 +6,48 @@ An online textbook for Medical Imaging, developed as part of a research project 
 
 *These are drafts of Chapters 1 and 2 of the Medical Imaging online textbook. Later chapters and quizzes will be added using AI-assisted content generation.*
 
-## Folder Structure
+# Medical Imaging Online Textbook
 
-- `chapter1.md`, `chapter2.md` : Main textbook content in Markdown.  
-- `images/` : Contains all figures used in the textbook.  
-- `_layouts/` : HTML templates for page layout (typically no editing needed).  
-- `_includes/` : Optional custom HTML includes for advanced formatting.  
-- `_config.yml` : Jekyll configuration file controlling site settings.  
+This repository hosts an online draft of a Medical Imaging textbook developed as part of a research project on AI-assisted educational content.
+
+The website is published at:  
+https://nikhilarao1.github.io/medical-imaging-book/
 
 ---
 
-## Editing Chapters
+## 📘 Current Chapters
+- **Chapter 1:** Introduction to Medical Imaging  
+- **Chapter 2:** Signal and System Foundations for Medical Imaging  
 
-- Open the Markdown file for the chapter you want to edit (e.g., `chapter1.md`).  
-- Add or modify text using **Markdown syntax**:
-  - Headings: `#`, `##`, `###`  
-  - Lists: `-` or `1.`  
-  - Paragraphs: just type normally  
-- **Equations**:
-  - Inline: `$a^2 + b^2 = c^2$`  
-  - Block:  
-  ```markdown
-  $$
-  E = mc^2
-  $$
+These chapters are drafts and will be refined collaboratively.
+
+---
+
+## ✏️ How to Edit Chapter Content
+
+- Chapter text is written in **Markdown**
+- To edit a chapter:
+  - Open `chapter1.md` or `chapter2.md`
+  - Click the pencil icon ✏️
+  - Make edits and commit changes
+
+Please avoid editing files in `_layouts`, `_includes`, or `_config.yml` unless necessary.
+
+---
+
+## 🖼️ How to Add Images
+
+1. Upload image files to the `images/` folder  
+2. Insert images into chapters using this format:
+
+```html
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/filename.png" width="400">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure X. Description of the figure.
+      </p>
+    </td>
+  </tr>
+</table>
