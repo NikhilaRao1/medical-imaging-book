@@ -41,5 +41,7 @@ Edits will automatically appear on the website.
 EDIT THIS TEXBTOOK:
 
 link to repository: https://github.com/nikhilarao1/medical-imaging-book
+
 link to Ch.1: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter1.md
+
 link to Ch.2: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter2.md
