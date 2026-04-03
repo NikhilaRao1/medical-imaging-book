@@ -156,6 +156,17 @@ Magnetic resonance imaging (MRI) scanners are a prominent example of imaging sys
 
 In practice, imaging systems are imperfect, and their limitations affect image quality. A low-quality imaging system may blur features, causing distinct structures to appear smeared or indistinct. This blurring is a characteristic of the system itself and reflects how the system processes and transforms the measured signals. Understanding these system characteristics is essential for interpreting images and improving imaging performance.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_6.png" alt="Imaging system as a measurement process mapping object properties to a reconstructed image" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.6: Imaging system as a measurement process mapping object properties to a reconstructed image.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.12 Control Systems**
 
 A control system is a type of system that does not stop after producing an output, but instead uses that output as feedback to modify its own behavior. In a control system, the output is continuously monitored and compared to a desired reference or goal. Any difference between the actual output and the desired output is used to adjust the system’s operation.
@@ -163,6 +174,17 @@ A control system is a type of system that does not stop after producing an outpu
 This feedback mechanism allows control systems to maintain stability and accuracy even in the presence of disturbances or changing conditions. For example, a thermostat-controlled heating system measures the current room temperature and compares it to a set temperature. If the temperature deviates from the desired value, the system automatically adjusts the heating output to correct the difference.
 
 Control systems are widely used in biomedical and engineering applications because they enable precise regulation of complex processes. In medical devices, feedback control can be used to regulate drug delivery, maintain stable physiological conditions, or adjust imaging parameters in real time. The ability to self-correct makes control systems more robust and reliable than open-loop systems.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_7.png" alt="A closed-loop control system in which the output is continuously measured and fed back to adjust system behavior" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.7: A closed-loop control system in which the output is continuously measured and fed back to adjust system behavior.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ## **2.13 Robotic Systems**
 
@@ -172,6 +194,17 @@ In real-world applications, robotic systems are used in manufacturing, explorati
 
 In medicine, robotic systems are increasingly used alongside medical imaging to guide surgical procedures. Imaging systems provide spatial information about the patient’s anatomy, while the robotic system uses this information to position instruments accurately. By combining imaging data, feedback control, and intelligent decision-making, robotic systems enhance precision, reduce invasiveness, and improve patient outcomes during complex surgical interventions.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_8.png" alt="Core components of a robotic system integrating sensing, computation, actuation, and feedback control" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.8: Core components of a robotic system integrating sensing, computation, actuation, and feedback control.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.14 Neurological Systems**
 
 The neurological system is a complex biological system responsible for sensing, processing, and responding to information from the environment. Neurons receive input in the form of chemical or electrical signals and transmit electrical impulses that propagate through neural networks. These signals enable essential functions such as perception, movement, cognition, and regulation of internal bodily states.
@@ -180,9 +213,31 @@ At the cellular level, neurons act as information-processing units that integrat
 
 The neurological system does not operate in isolation but interacts continuously with other systems in the body. Sensory input, motor output, and internal feedback loops work together to maintain coordinated function. This system-level perspective is essential for studying brain function and neurological disorders.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_9.png" alt="A neuron modeled as an information-processing system that integrates multiple inputs to produce an output signal" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.9: A neuron modeled as an information-processing system that integrates multiple inputs to produce an output signal.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.15 The Human Body as an Interconnected System**
 
 The human body can be understood as an interconnected system composed of multiple levels of organization. These levels range from genes and cells to tissues, organs, and large-scale systems such as the circulatory, respiratory, and neurological systems. Each level interacts with others, creating a highly integrated and dynamic biological network.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_10.png" alt="The human body viewed as an interconnected system of interacting subsystems across multiple scales" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.10: The human body viewed as an interconnected system of interacting subsystems across multiple scales.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Biomedical engineering and bioimaging focus on studying the body as a collection of interacting components rather than isolated parts. Changes at the molecular or cellular level can propagate upward to affect organ function and overall health. Imaging technologies play a crucial role in visualizing these interactions across scales, allowing researchers and clinicians to observe structure and function simultaneously.
 
