@@ -111,7 +111,7 @@ In medical imaging, linear approximations are widely used even when systems are 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_5.png" alt="One-dimensional signals and two-dimensional images represented as linear functions" width="500">
+      <img src="images/2_5.png" alt="One-dimensional signals and two-dimensional images represented as linear functions" width="600">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.5: One-dimensional signals and two-dimensional images represented as linear functions.
       </p>
@@ -159,7 +159,7 @@ In practice, imaging systems are imperfect, and their limitations affect image q
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_6.png" alt="Imaging system as a measurement process mapping object properties to a reconstructed image" width="500">
+      <img src="images/2_6.png" alt="Imaging system as a measurement process mapping object properties to a reconstructed image" width="600">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.6: Imaging system as a measurement process mapping object properties to a reconstructed image.
       </p>
