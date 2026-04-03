@@ -87,6 +87,17 @@ Higher-order terms are then added to improve the accuracy of the approximation. 
 
 In bioimaging and biomedical signal processing, Taylor expansions are commonly used to simplify nonlinear system behavior. Small deviations around an operating point can often be analyzed using only the constant and linear terms, resulting in a linearized model. This technique enables efficient analysis of imaging systems, noise behavior, and signal distortions while maintaining sufficient accuracy for practical applications.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_4.png" alt="Local linear approximation of a nonlinear function using a Taylor expansion around an operating point" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.4: Local linear approximation of a nonlinear function using a Taylor expansion around an operating point.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.8 Linear Functions in One and Two Dimensions**
 
 Linear functions are among the most important mathematical tools used in engineering and medical imaging because of their simplicity and interpretability. In one dimension, a linear function describes how a single input variable maps to a single output variable, typically in the form $f(x) = mx + b$. This type of function is commonly used to model relationships such as signal amplitude as a function of time or sensor output as a function of input intensity.
