@@ -197,7 +197,7 @@ In medicine, robotic systems are increasingly used alongside medical imaging to 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_8.png" alt="Core components of a robotic system integrating sensing, computation, actuation, and feedback control" width="500">
+      <img src="images/2_8.png" alt="Core components of a robotic system integrating sensing, computation, actuation, and feedback control" width="600">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.8: Core components of a robotic system integrating sensing, computation, actuation, and feedback control.
       </p>
@@ -216,7 +216,7 @@ The neurological system does not operate in isolation but interacts continuously
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_9.png" alt="A neuron modeled as an information-processing system that integrates multiple inputs to produce an output signal" width="500">
+      <img src="images/2_9.png" alt="A neuron modeled as an information-processing system that integrates multiple inputs to produce an output signal" width="600">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.9: A neuron modeled as an information-processing system that integrates multiple inputs to produce an output signal.
       </p>
