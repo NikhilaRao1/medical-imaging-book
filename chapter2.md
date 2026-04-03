@@ -64,6 +64,17 @@ Linear and sinusoidal functions serve different but complementary roles in bioim
 
 Linear functions are especially useful in modeling amplification, attenuation, and calibration processes. Sinusoidal functions, on the other hand, are critical for understanding signal modulation, wave propagation, and spectral analysis. Together, these functions provide a mathematical framework for describing how bioimaging systems acquire and process data.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_3.png" alt="Comparison of linear and sinusoidal functions commonly used in signal processing and imaging="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.3: Comparison of linear and sinusoidal functions commonly used in signal processing and imaging.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.7 Taylor Expansion**
 
 The Taylor expansion is a mathematical technique used to approximate complex functions using a sum of simpler polynomial terms. Rather than working directly with a complicated function, the Taylor expansion represents the function as a series of terms that are easier to analyze and compute. This approach is especially valuable in engineering and bioimaging, where exact analytical expressions may be difficult or impossible to evaluate.
