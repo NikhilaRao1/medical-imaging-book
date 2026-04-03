@@ -15,7 +15,7 @@ A system can be modeled mathematically as a function that processes an input to 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_1.png" alt="System represented as a mathematical function mapping input to output" width="500">
+      <img src="images/2_1.png" alt="System represented as a mathematical function mapping input to output" width="550">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.1: Representation of a system as a mathematical function mapping an input signal to an output signal.
       </p>
@@ -34,7 +34,7 @@ A mapping describes how each element of the domain is associated with an element
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_2.png" alt="Illustration of a function mapping elements from a domain to a range" width="500">
+      <img src="images/2_2.png" alt="Illustration of a function mapping elements from a domain to a range" width="550">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.2: Illustration of a function mapping elements from a domain to a range.
       </p>
@@ -67,7 +67,7 @@ Linear functions are especially useful in modeling amplification, attenuation, a
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_3.png" alt="Comparison of linear and sinusoidal functions" width="500">
+      <img src="images/2_3.png" alt="Comparison of linear and sinusoidal functions" width="550">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.3: Comparison of linear and sinusoidal functions commonly used in signal processing and imaging.
       </p>
