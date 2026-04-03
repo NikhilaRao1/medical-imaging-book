@@ -12,6 +12,15 @@ A function is a mathematical relationship that assigns exactly one output value 
 
 A system can be modeled mathematically as a function that processes an input to produce an output. For example, an optical imaging system maps reflected light intensity from tissue to a digital image, while an MRI system converts electromagnetic signals into spatial information. Representing these systems as functions allows their behavior to be predicted, analyzed, and improved using mathematical techniques.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_1.png" alt="Wilhelm Conrad Röntgen X-ray of his wife's hand" width="250">
+      <p style="font-size: 0.8em; color: #555;">Figure 2.1. Representation of a system as a mathematical function mapping an input signal to an output signal.</p>
+    </td>
+  </tr>
+</table>
+
 ## **2.3 Domain, Range, and Mapping**
 
 The domain of a function is the set of all input values for which the function is defined. In bioimaging applications, the domain may represent time intervals, spatial coordinates, or frequency ranges over which measurements are taken. Ensuring that inputs remain within the domain is critical for accurate and stable system performance.
