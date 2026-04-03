@@ -15,7 +15,7 @@ A system can be modeled mathematically as a function that processes an input to 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_1.png" alt="System represented as a mathematical function mapping input to output" width="250">
+      <img src="images/2_1.png" alt="System represented as a mathematical function mapping input to output" width="500">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.1: Representation of a system as a mathematical function mapping an input signal to an output signal.
       </p>
