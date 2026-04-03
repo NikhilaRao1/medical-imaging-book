@@ -231,7 +231,7 @@ The human body can be understood as an interconnected system composed of multipl
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_10.png" alt="The human body viewed as an interconnected system of interacting subsystems across multiple scales" width="500">
+      <img src="images/2_10.png" alt="The human body viewed as an interconnected system of interacting subsystems across multiple scales" width="600">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.10: The human body viewed as an interconnected system of interacting subsystems across multiple scales.
       </p>
