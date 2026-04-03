@@ -31,6 +31,17 @@ The range of a function consists of all possible output values produced when the
 
 A mapping describes how each element of the domain is associated with an element of the range. In bioimaging systems, this mapping defines how physical quantities such as tissue properties or electromagnetic signals are converted into measurable data. A valid function ensures that each input maps to a single output, preserving consistency and interpretability in system design.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_2.png" alt="Illustration of a function mapping elements from a domain to a range" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.2: Illustration of a function mapping elements from a domain to a range.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.4 Linear Functions**
 
 A linear function is a function in which the output changes proportionally with the input. It is commonly expressed in the form $f(x) = mx + b$, where the slope $( m )$ determines the rate of change and the intercept $( b )$ defines the output when the input is zero. Linear functions are among the simplest mathematical models used in engineering and science.
