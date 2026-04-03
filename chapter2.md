@@ -67,7 +67,7 @@ Linear functions are especially useful in modeling amplification, attenuation, a
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_3.png" alt="Comparison of linear and sinusoidal functions commonly used in signal processing and imaging="250">
+      <img src="images/2_3.png" alt="Comparison of linear and sinusoidal functions commonly used in signal processing and imaging="150">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.3: Comparison of linear and sinusoidal functions commonly used in signal processing and imaging.
       </p>
