@@ -108,6 +108,17 @@ Linear functions are easy to analyze because their behavior is predictable and w
 
 In medical imaging, linear approximations are widely used even when systems are not perfectly linear. Many imaging devices are designed to operate within a range where their response is approximately linear, enabling accurate modeling and reconstruction. This reliance on linear functions forms the mathematical foundation for many imaging techniques, including image filtering, noise reduction, and tomographic reconstruction.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_5.png" alt="One-dimensional signals and two-dimensional images represented as linear functions" width="500">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.5: One-dimensional signals and two-dimensional images represented as linear functions.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.9 Systems, Inputs, and Outputs**
 
 A system is a process that takes an input, performs some operation, and produces an output. In mathematical terms, a system can be represented as an operator that acts on an input signal or function. This abstraction allows physical devices, biological processes, and computational algorithms to be described using a common mathematical framework.
