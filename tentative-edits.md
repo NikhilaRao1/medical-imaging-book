@@ -15,9 +15,5 @@ This branch is for proposed changes to the textbook. Do **not** edit the `main` 
 
 | Chapter | Change Description | Contributor | Date |
 |---------|-----------------|-------------|------|
-| 2.12    | Add figure of thermostat-controlled system | Nikhil | 2026-04-03 |
-| 2.13    | Add robotic system diagram | Nikhil | 2026-04-03 |
-| 2.14    | Add neuron signaling diagram | Nikhil | 2026-04-03 |
-| 2.15    | Add human body system interaction diagram | Nikhil | 2026-04-03 |
-| 2.16    | Add diagram of human-robot integration | Nikhil | 2026-04-03 |
-| 2.17-2.25 | Add linear system illustrations (additivity, homogeneity, superposition) | Nikhil | 2026-04-03 |
+|     |  |  |  |
+|     |  |  |  |
