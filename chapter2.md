@@ -251,6 +251,17 @@ Emerging fields such as neuro-inspired artificial intelligence and embodied inte
 
 In biomedical applications, robotic and artificial systems are increasingly integrated with medical imaging and neural data. Examples include brain-controlled prosthetic limbs and image-guided robotic surgery systems. As these technologies continue to develop, understanding both human and artificial systems through a shared systems framework becomes essential for advancing medicine and healthcare.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_11.png" alt="Interaction between biological systems and engineered systems through neural interfaces" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.11: Conceptual representation of interaction between biological systems and engineered systems through neural interfaces.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.17 Linear Systems**
 
 A system is defined as linear if it satisfies two fundamental properties: additivity and homogeneity. These properties describe how the system responds to combinations and scalings of inputs. Linear systems are central to biomedical signal processing and medical imaging because they are mathematically tractable and allow powerful analytical tools to be applied.
