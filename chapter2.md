@@ -270,6 +270,17 @@ Mathematically, if a system is represented by an operator \(L\) acting on an inp
 
 An important consequence of linearity is that a linear system must produce zero output when given zero input. If an input signal contains no energy or information, the system cannot generate output on its own. This condition follows directly from the properties of additivity and homogeneity.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_12.png" alt="Comparison of linear and nonlinear system responses" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.12: Comparison of linear and nonlinear system responses illustrating proportional versus nonlinear behavior.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.18 Additivity**
 
 Additivity describes how a system responds to the sum of two inputs. A system is additive if the response to a combined input equals the sum of the individual responses. In mathematical terms, this property is expressed as
@@ -277,6 +288,17 @@ Additivity describes how a system responds to the sum of two inputs. A system is
 $$
 L(v_1(t) + v_2(t)) = L(v_1(t)) + L(v_2(t))
 $$
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_13.png" alt="Illustration of additivity in system responses" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.13: Illustration of additivity: the response to a sum of inputs equals the sum of the individual responses.
+      </p>
+    </td>
+  </tr>
+</table>
 
 This concept can be illustrated using function notation. If an input function \(f_1(x)\) is processed by a system \(H\) to produce an output \(K_1(x)\), and another input \(f_2(x)\) produces an output \(K_2(x)\), then the combined input\(f_1(x) + f_2(x)\) must produce the combined output \(K_1(x) + K_2(x)\). Symbolically:
 
@@ -297,6 +319,17 @@ Homogeneity describes how a system responds when an input is scaled by a constan
 $$
 L(\alpha v(t)) = \alpha L(v(t))
 $$
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_14.png" alt="Illustration of homogeneity in system responses" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.14: Illustration of homogeneity: scaling the input scales the output by the same factor.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Using function notation, if an input \(f_1(x)\) produces an output \(K_1(x)\), then scaling the input by a constant \(a_1\) must scale the output accordingly. This relationship can be written symbolically as:
 
@@ -319,6 +352,17 @@ Homogeneity ensures that the system preserves relative signal strength. In medic
 
 The superposition principle states that the response of a linear system to a weighted sum of inputs equals the same weighted sum of the individual responses. This principle follows directly from the combined application of additivity and homogeneity. Together, these properties allow linear systems to handle complex inputs by decomposing them into simpler signals.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_15.png" alt="Superposition principle in linear systems" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.15: Superposition principle in linear systems: complex inputs can be decomposed into simpler components whose responses add linearly.
+      </p>
+    </td>
+  </tr>
+</table>
+
 A direct consequence of homogeneity is that if the input to a linear system is zero, the output must also be zero. Setting the scalar \(\alpha = 0\) in the homogeneity condition yields:
 
 $$
@@ -334,6 +378,17 @@ Additivity and homogeneity are closely related but represent distinct aspects of
 
 Together, additivity and homogeneity define linearity, and both are required as separate conditions. However, when both properties hold, they combine to produce the superposition principle. In practice, linear systems are tested by verifying both conditions rather than attempting to derive one from the other.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_16.png" alt="Additivity, homogeneity, and superposition in linear systems" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.16: Illustration of additivity, homogeneity, and their combination into the superposition principle for linear systems.
+      </p>
+    </td>
+  </tr>
+</table>
+
 In biomedical signal processing and medical imaging, verifying linearity allows engineers to apply powerful mathematical tools such as convolution, Fourier analysis, and inverse problem techniques. These tools form the foundation of image formation, reconstruction, and enhancement algorithms used throughout modern medical imaging.
 
 ## **2.22 Equivalence of Additivity and Homogeneity in Continuous Systems**
@@ -342,6 +397,17 @@ In general, linearity is defined by the two separate conditions of additivity an
 
 This equivalence is important in theoretical system analysis because it simplifies the conditions required to establish linearity. Instead of verifying both properties independently, it is sufficient to verify one property along with continuity. This result has practical implications for modeling physical and imaging systems, which are often assumed to behave continuously.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_16.png" alt="Additivity and homogeneity in continuous systems" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.16: In continuous systems, additivity and homogeneity are mathematically equivalent under continuity assumptions.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.23 Homogeneity Implies Scaling Properties**
 
 Consider a function \(f(x)\) that satisfies homogeneity, meaning that for any scalar \(n\),
@@ -349,6 +415,17 @@ Consider a function \(f(x)\) that satisfies homogeneity, meaning that for any sc
 $$
 f(nx) = n f(x)
 $$
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_17.png" alt="Homogeneity illustrated through proportional scaling of input and output" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.17: Homogeneity illustrated through proportional scaling of both input and output.
+      </p>
+    </td>
+  </tr>
+</table>
 
 This equation expresses the idea that scaling the input by a factor \(n\) scales the output by the same factor. This is the defining characteristic of homogeneity.
 
@@ -423,6 +500,17 @@ $$
 
 This confirms that additivity can be constructed directly from homogeneity under continuity assumptions.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_19.png" alt="Derivation of additivity from homogeneity under continuity assumptions" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.19: Derivation of additivity from homogeneity under continuity assumptions.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.25 Implications for Linear System Theory**
 
 The derivation above demonstrates that in continuous systems, homogeneity alone is sufficient to guarantee additivity. As a result, additivity and homogeneity are not independent conditions in this special case. Either property can imply the other when continuity is assumed.
@@ -434,6 +522,17 @@ Understanding when and why these properties are equivalent helps clarify the the
 ## **2.26 Independence of Homogeneity**
 
 Although additivity and homogeneity together define linearity, additivity alone does not guarantee homogeneity. This can be demonstrated using a counterexample from complex-valued functions. Such examples are important because they show why both properties must be explicitly verified when testing whether a system is linear.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_20.png" alt="Complex conjugation preserves additivity but violates homogeneity" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.20: Complex conjugation preserves additivity but violates homogeneity for complex scalars.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Consider the function
 
