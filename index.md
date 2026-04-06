@@ -1,47 +1,55 @@
----
-title: Medical Imaging
----
+# Medical Imaging Online Textbook (Draft)
 
-# Medical Imaging
+Welcome to the draft of an open, online textbook on **Medical Imaging**.
 
-Welcome to the draft of an online textbook on **Medical Imaging**.
-
-This textbook introduces the physical principles, system concepts, and engineering foundations behind modern medical imaging technologies.
+This textbook introduces the physical principles, system concepts, and engineering foundations behind modern medical imaging technologies. It is designed to be **modular, collaborative, and continuously improving**.
 
 ---
 
 ## 📘 Available Chapters
 
-- [Chapter 1: Introduction to Medical Imaging](chapter1)
-- [Chapter 2: Signal and System Foundations for Medical Imaging](chapter2)
+- **Chapter 1:** Introduction to Medical Imaging  
+- **Chapter 2:** Signal and System Foundations for Medical Imaging  
 
 ---
 
 ## 🎯 Purpose of This Textbook
 
-This project is part of an ongoing effort to develop an open, modular medical imaging textbook.
+This project is part of an ongoing effort to develop an **open-access medical imaging textbook**.
 
-The current chapters serve as foundational material and will be expanded and polished over time.
+Current chapters serve as foundational material and will be expanded, refined, and peer-reviewed over time. Figures are either **AI-generated specifically for this textbook** or **clearly cited**.
 
 ---
 
-## 👥 For Contributors
+## ✏️ Edit This Textbook (No Setup Required)
 
-This textbook is generated from a GitHub repository.
+All content is written in Markdown and can be edited **directly in your browser** using GitHub.
 
-To edit chapters directly in your browser (no local setup required):
+### 🔗 Direct Edit Links
+- **Repository:**  
+  https://github.com/nikhilarao1/medical-imaging-book
 
-Visit the GitHub repository
-Open the chapter file (e.g., chapter1.md)
-Click the ✏️ Edit button
-Make changes and click Commit changes
+- **Edit Chapter 1:**  
+  https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter1.md
 
-Edits will automatically appear on the website.
+- **Edit Chapter 2:**  
+  https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter2.md
 
-EDIT THIS TEXBTOOK:
+---
 
-link to repository: https://github.com/nikhilarao1/medical-imaging-book
+## 🔄 Contribution & Review Workflow
 
-link to Ch.1: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter1.md
+To keep edits organized and reviewable:
 
-link to Ch.2: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter2.md
+1. **Propose tentative edits** in the `tentative-edits` branch  
+2. Changes are reviewed before being merged into `main`  
+3. Approved edits appear on the live site
+
+This review layer helps track changes, prevent conflicts, and maintain quality as the project grows.
+
+---
+
+## 🌐 Live Website
+
+The textbook is published at:  
+https://nikhilarao1.github.io/medical-imaging-book/
