@@ -1,33 +1,75 @@
 # Medical Imaging Online Textbook
 
-This repository hosts a draft of an online Medical Imaging textbook developed as part of a research project on AI-assisted educational content.
+This repository hosts an **online draft of a Medical Imaging textbook** developed as part of a research project exploring **AI-assisted educational content**.
 
-The website is published at:  
-[https://nikhilarao1.github.io/medical-imaging-book/](https://nikhilarao1.github.io/medical-imaging-book/)
+The goal is to build an open, modular, and collaboratively edited textbook covering the theory and engineering foundations of medical imaging.
+
+🌐 **Live site:**  
+https://nikhilarao1.github.io/medical-imaging-book/
+
+---
 
 ## 📘 Current Chapters
-- Chapter 1: Introduction to Medical Imaging
-- Chapter 2: Signal and System Foundations for Medical Imaging
 
-These chapters are drafts and will be refined collaboratively. Later chapters and quizzes will also be added.
+- **Chapter 1:** Introduction to Medical Imaging  
+- **Chapter 2:** Signal and System Foundations for Medical Imaging  
 
----
-
-## ✏️ How to Edit Chapter Content
-
-Chapter text is written in Markdown. You can edit chapters **directly in your browser** without any local setup.
-
-1. Open the chapter file (`chapter1.md` or `chapter2.md`) in the repository.
-2. Click the pencil icon ✏️ to edit the file.
-3. Make your changes and commit them to the branch you are working on (see **Tentative Edits Workflow** below).
-4. Do **not** edit `_layouts`, `_includes`, or `_config.yml` unless necessary for site functionality.
+These chapters are drafts and will continue to be refined.
 
 ---
 
-## 🖼️ How to Add Images
+## ✏️ How to Edit Chapter Content (Browser-Based)
 
-1. Upload your image files to the `images/` folder in the repository.
-2. Insert images into chapters using this format:
+All chapters are written in **Markdown** and can be edited directly on GitHub.
+
+### Direct Edit Links
+- **Edit Chapter 1:**  
+  https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter1.md
+
+- **Edit Chapter 2:**  
+  https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter2.md
+
+### Steps
+1. Open a chapter file  
+2. Click the ✏️ **Edit** button  
+3. Make changes  
+4. Click **Commit changes**
+
+⚠️ Please avoid editing `_layouts`, `_includes`, or `_config.yml` unless necessary.
+
+---
+
+## 🔄 Contribution Workflow (Tentative Edits → Approval)
+
+To support collaboration and review:
+
+- **Main branch (`main`)**  
+  Contains approved, published content
+
+- **Tentative edits branch (`tentative-edits`)**  
+  Used for proposed or experimental edits
+
+### Recommended Workflow
+1. Make edits in the `tentative-edits` branch  
+2. Open a Pull Request to `main`  
+3. Changes are reviewed and approved before merging
+
+This structure allows:
+- Change tracking
+- Quality control
+- Clear editorial oversight
+
+---
+
+## 🖼️ How to Add Figures
+
+### Image Requirements
+- Figures must be **originally generated** (e.g., AI-generated for this textbook), or  
+- Clearly **cite external sources** in the caption
+
+### Steps
+1. Upload image files to the `images/` folder  
+2. Insert images into chapters using the format below
 
 ```html
 <table align="center">
@@ -35,7 +77,7 @@ Chapter text is written in Markdown. You can edit chapters **directly in your br
     <td align="center">
       <img src="images/filename.png" width="400">
       <p style="font-size: 0.8em; color: #555;">
-        Figure X. Description of the figure. Include source or indicate "AI-generated".
+        Figure X. Description of the figure.
       </p>
     </td>
   </tr>
