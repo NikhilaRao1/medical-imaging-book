@@ -37,7 +37,3 @@ This helps keep the main textbook stable while still allowing everyone to experi
 - Images go in the `/images` folder  
 - Figures should be either AI-generated or properly sourced  
 - Each figure should include a short caption explaining what it shows  
-
----
-
-That’s basically it — edit, refine, and we’ll merge things in once they’re ready.
