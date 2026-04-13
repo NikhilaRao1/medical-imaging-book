@@ -606,6 +606,17 @@ $$
 
 Because $m_1 \ne m_2$, these expressions are not equal, and additivity is violated.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_21.png" alt="Independence of additivity illustrated using a piecewise function over rational and irrational inputs" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.21: Visualization of a piecewise function showing that homogeneity does not guarantee additivity for rational and irrational inputs.
+      </p>
+    </td>
+  </tr>
+</table>
+
 This example demonstrates that homogeneity does not imply additivity. A system may scale inputs correctly while failing to preserve sums, which disqualifies it from being linear.
 
 ## **2.28 Implications for Testing Linearity**
@@ -642,6 +653,17 @@ where $\alpha$ and $\beta$ are scalar weights.
 
 This approach essentially redefines the linear system around a reference operating point, often referred to as the system’s nominal state. By focusing on deviations from this reference, the system behaves according to the superposition principle, even if the absolute input-output function includes an intercept or other nonlinear baseline behavior. The key insight is that linearity can be meaningful in terms of relative changes, rather than absolute values.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_22.png" alt="Relative linearity around an operating point showing local linear approximation of a nonlinear system" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.22: Relative linearity around a reference operating point, where small deviations exhibit locally linear behavior.
+      </p>
+    </td>
+  </tr>
+</table>
+
 In medical imaging, relative linearity is particularly useful. Imaging devices often have baseline offsets or background signals, such as dark current in optical detectors or baseline voltage in MRI receivers. By analyzing changes in signals relative to these baselines, rather than raw absolute measurements, the system can be treated as effectively linear. This simplifies reconstruction algorithms, calibration procedures, and quantitative analyses. For example, in functional MRI (fMRI), relative changes in signal intensity are used to infer brain activity rather than absolute signal values. Similarly, in CT or ultrasound imaging, analyzing contrast or intensity changes relative to tissue background allows linear models to guide reconstruction and processing, even when absolute signals include offsets.
 
 By adopting a relative perspective, engineers and clinicians can apply linear system theory more broadly and leverage the associated mathematical tools, such as superposition, convolution, and Fourier analysis. This makes it possible to model, analyze, and interpret imaging data effectively, even when the underlying physical system exhibits nonlinear offsets in absolute terms.
@@ -649,6 +671,17 @@ By adopting a relative perspective, engineers and clinicians can apply linear sy
 ## **2.30 Voltage–Current Relationships in Electrical Components**
 
 Understanding how basic electrical components respond to voltage and current is fundamental for analyzing circuits in biomedical imaging systems. The voltage–current (V–I) relationships define how each component behaves under different electrical conditions, and these relationships also illustrate the concept of linearity in physical systems. Resistors, capacitors, and inductors, while each having distinct characteristics, are widely used in imaging equipment to regulate and stabilize electrical signals.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_23.png" alt="Voltage-current relationships for resistor capacitor and inductor showing linear and dynamic behaviors" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.23: Comparison of voltage–current relationships for resistors, capacitors, and inductors.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ### **2.30.1 Resistors**
 
@@ -663,6 +696,17 @@ where $R$ is the resistance. This equation shows that the voltage is directly pr
 $$
 i = \frac{v}{R}.
 $$
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_24.png" alt="Shift invariant linear system showing identical waveform shifted in time input and output" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.24: Shift invariance in linear systems where a time-shifted input produces an equally shifted output without שינוי in shape.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Whether voltage is treated as a function of current or vice versa, the relationship remains clearly linear, as the slope of the V–I curve is constant. In biomedical imaging systems, resistors are used to control signal amplitudes, set biasing conditions in sensors, and limit current to protect sensitive components. Their predictable linear behavior makes them essential for precise and stable circuit operation.
 
