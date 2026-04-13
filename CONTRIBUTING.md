@@ -1,40 +1,32 @@
-## ✏️ How to Edit the Textbook (Contributor Guide)
+## ✏️ Contributing to the Textbook
 
-This textbook uses a simple GitHub-based editing system.
+This textbook is built on GitHub, so editing is pretty straightforward and can be done directly in your browser.
 
-### 1. Direct Editing (Fast Method)
-Each chapter can be edited directly using GitHub:
+---
+
+### 📝 Quick way to edit chapters
+
+You can edit chapters directly here:
 
 - Chapter 1: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter1.md  
 - Chapter 2: https://github.com/nikhilarao1/medical-imaging-book/edit/main/chapter2.md  
 
-Steps:
-1. Open the link
-2. Click the ✏️ edit button
-3. Make changes in Markdown
-4. Click “Commit changes”
+Just open a link, click the ✏️ edit button, make your changes, and hit **Commit changes**.
 
 ---
 
-### 2. Review-Based Editing (Recommended System)
+### 🔄 How changes are handled
 
-To ensure quality control, we use a **two-step review process**:
+To keep things organized as more people contribute:
 
-- Contributors make edits in the `tentative-edits` branch
-- Changes are reviewed before being merged into `main`
-- Only approved edits appear on the live textbook
-
----
-
-### 3. Images and Figures
-- Figures must be AI-generated or properly cited
-- All images should be added to the `/images` folder
-- Each figure must include a caption and description
+- Small edits can be made directly through GitHub
+- Larger or experimental changes go through the `tentative-edits` branch
+- Those changes are reviewed before being merged into the main version of the textbook
 
 ---
 
-### 4. Key Principle
-All contributions should be:
-- Clear
-- Traceable
-- Reviewable before publishing
+### 🖼️ Adding figures
+
+- Images go in the `/images` folder
+- Figures should be either AI-generated or properly sourced
+- Every figure should include a short caption explaining it
