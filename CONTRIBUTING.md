@@ -1,6 +1,6 @@
 ## ✏️ Contributing to the Textbook
 
-This textbook is built on GitHub, so editing is pretty straightforward and can be done directly in your browser.
+This textbook is built on GitHub, so editing is pretty simple and can be done directly in your browser.
 
 ---
 
@@ -15,18 +15,29 @@ Just open a link, click the ✏️ edit button, make your changes, and hit **Com
 
 ---
 
-### 🔄 How changes are handled
+### 🔄 Using the `tentative-edits` branch
 
-To keep things organized as more people contribute:
+For anything more than a small quick fix, we use a separate branch called `tentative-edits`.
 
-- Small edits can be made directly through GitHub
-- Larger or experimental changes go through the `tentative-edits` branch
-- Those changes are reviewed before being merged into the main version of the textbook
+Think of it as a “draft space” where changes can be worked on before they go live.
+
+Here’s how it works:
+
+1. Switch to the `tentative-edits` branch on GitHub
+2. Make your edits there (same way as normal editing)
+3. Commit your changes to that branch
+4. Once things look good, the changes are merged into `main`
+
+This helps keep the main textbook stable while still allowing everyone to experiment and refine content freely.
 
 ---
 
 ### 🖼️ Adding figures
 
-- Images go in the `/images` folder
-- Figures should be either AI-generated or properly sourced
-- Every figure should include a short caption explaining it
+- Images go in the `/images` folder  
+- Figures should be either AI-generated or properly sourced  
+- Each figure should include a short caption explaining what it shows  
+
+---
+
+That’s basically it — edit, refine, and we’ll merge things in once they’re ready.
