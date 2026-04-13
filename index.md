@@ -47,6 +47,11 @@ To keep edits organized and reviewable:
 
 This review layer helps track changes, prevent conflicts, and maintain quality as the project grows.
 
+## 👥 For Contributors
+
+Please see the full contributor guide here:  
+https://github.com/nikhilarao1/medical-imaging-book/blob/main/CONTRIBUTING.md
+
 ---
 
 ## 🌐 Live Website
