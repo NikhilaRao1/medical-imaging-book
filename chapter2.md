@@ -503,7 +503,7 @@ This confirms that additivity can be constructed directly from homogeneity under
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_19.png" alt="Derivation of additivity from homogeneity under continuity assumptions" width="600">
+      <img src="images/2_19.png" alt="Derivation of additivity from homogeneity under continuity assumptions" width="450">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.19: Derivation of additivity from homogeneity under continuity assumptions.
       </p>
@@ -526,7 +526,7 @@ Although additivity and homogeneity together define linearity, additivity alone 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/2_20.png" alt="Complex conjugation preserves additivity but violates homogeneity" width="600">
+      <img src="images/2_20.png" alt="Complex conjugation preserves additivity but violates homogeneity" width="450">
       <p style="font-size: 0.8em; color: #555;">
         Figure 2.20: Complex conjugation preserves additivity but violates homogeneity for complex scalars.
       </p>
