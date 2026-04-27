@@ -712,6 +712,17 @@ Whether voltage is treated as a function of current or vice versa, the relations
 
 ### **2.30.2 Capacitors**
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_25.png" alt="Capacitor charge accumulation showing voltage increase as charge builds over time" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.25: Capacitor behavior showing charge accumulation over time, leading to increasing voltage across the plates.
+      </p>
+    </td>
+  </tr>
+</table>
+
 A capacitor stores electrical charge and exhibits a V–I relationship that depends on the time rate of change of current or voltage. The voltage across a capacitor is related to the accumulated charge by
 
 $$
@@ -725,6 +736,17 @@ i(t) = C \frac{dv(t)}{dt}.
 $$
 
 These equations reflect the fact that a capacitor accumulates electrical charge over time, and the current depends on how rapidly the voltage changes. Capacitors are widely used in medical imaging electronics to stabilize power supplies and smooth analog signals before they are converted into digital data. For example, in CT or MRI systems, capacitors filter high-frequency noise and provide consistent voltage levels to sensitive detectors and amplifiers, ensuring accurate measurements and reducing artifacts in images.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_26.png" alt="Capacitor smoothing noisy signal into clean output in medical imaging system" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.26: Capacitors in medical imaging systems smooth high-frequency noise to produce stable and accurate signals.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ### **2.30.3 Inductors**
 
@@ -740,9 +762,42 @@ $$
 i(t) = \frac{1}{L} \int_{t_0}^{t} v(\tau)\, d\tau + i(t_0)
 $$
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_27.png" alt="Inductor coil resisting changes in current with magnetic field lines" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.27: An inductor stores energy in a magnetic field and resists sudden changes in current, causing current to build gradually over time.
+      </p>
+    </td>
+  </tr>
+</table>
+
 Unlike capacitors, which resist sudden voltage changes, inductors resist sudden changes in current. This property allows the current to build gradually rather than instantaneously, which helps smooth and stabilize electrical signals. In medical imaging equipment such as MRI machines, inductors are crucial for maintaining steady currents in coils and amplifiers, preventing spikes or fluctuations that could distort signals or damage sensitive hardware.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_28.png" alt="Inductor stabilizing current in MRI system coils and electronics" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.28: Inductors in MRI systems stabilize current flow in coils and prevent signal distortion.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ### **2.30.4 Summary of V–I Behavior**
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_29.png" alt="Comparison of resistor capacitor and inductor voltage current relationships" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.29: Comparison of resistor, capacitor, and inductor voltage–current relationships and system responses.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Resistors, capacitors, and inductors illustrate different aspects of electrical linearity. Resistors exhibit direct proportionality between voltage and current, capacitors relate current to the derivative of voltage (or voltage to integrated current), and inductors relate voltage to the derivative of current (or current to integrated voltage). In biomedical imaging systems, these components work together to regulate, filter, and stabilize signals, ensuring high-quality, accurate imaging while protecting sensitive electronic equipment.
 
@@ -762,6 +817,17 @@ $$
 
 where $\tau$ is the shift in the input signal.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_30.png" alt="Time shift invariance showing identical output waveform shifted in time" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.30: Shift invariance in linear systems where a time-shifted input produces an identical shifted output.
+      </p>
+    </td>
+  </tr>
+</table>
+
 A real-world example of a shift-invariant system is an audio amplifier. If an audio signal is delayed by a few seconds before being input, the amplified output is the same waveform delayed by the same amount. The amplifier does not change the tone or amplitude of the signal based on the time of arrival; it treats all inputs consistently, simply producing a shifted version of the output.
 
 Shift invariance provides several benefits in medical imaging. Imaging systems often measure signals sequentially in time or across spatial coordinates, such as the acquisition of slices in a a CT scanner or echoes in MRI. Shift invariance ensures that the system processes each part of the signal consistently, making the response predictable and allowing image reconstruction algorithms to assume uniform behavior across time or space. This property is crucial for techniques like convolution-based filtering, deblurring, and tomographic reconstruction, which rely on the output being a shifted version of the input when the input itself is shifted.
@@ -773,6 +839,17 @@ f(x - a) \xrightarrow{L} g(x - a)
 $$
 
 where a shift `a` in the input produces the same shift in the output. This general form applies to both time-domain signals and spatial-domain imaging. For instance, in MRI, moving the imaging slice slightly along one axis shifts the measured signals in a predictable way without altering their shape, which is a direct manifestation of spatial shift invariance.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_31.png" alt="Spatial shift invariance in MRI showing identical image shifted in position" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.31: Spatial shift invariance in imaging systems where shifting the input results in an equivalent shift in output.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Shift invariance is sometimes referred to as temporal invariance when applied in the time domain or spatial invariance when applied in imaging coordinates. In all cases, the key idea is that the system’s behavior depends only on the form of the input, not its location. This property greatly simplifies analysis and processing because linear operations, such as convolution and filtering, can be applied universally across all parts of the signal or image.
 
