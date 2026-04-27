@@ -39,7 +39,9 @@ One of the most famous images in scientific history is the X-ray of Röntgen’s
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_2.png" alt="Historical X-ray of Röntgen’s wife’s hand showing bones and wedding ring" width="600">
+      <img src="images/1_2.png"
+           alt="Röntgen X-ray hand"
+           style="width: 420px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.2: X-ray image of Wilhelm Conrad Röntgen’s wife’s hand (1895), showing bones and a wedding ring. This historic image demonstrated, for the first time, the ability to visualize internal structures without surgery.
       </p>
@@ -54,7 +56,9 @@ X-ray radiography is one of the simplest and most widely used medical imaging te
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_3.png" alt="Black and white X-ray image of human ribcage showing bones and soft tissue contrast" width="600">
+      <img src="images/1_3.png"
+           alt="X-ray ribcage"
+           style="width: 420px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.3: Black-and-white X-ray radiograph of a human ribcage, illustrating how dense bone absorbs more X-rays and appears brighter than surrounding soft tissue.
       </p>
@@ -74,7 +78,9 @@ X-ray computed tomography, commonly known as CT, was developed to overcome this 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_4.png" alt="Diagram of CT scanner showing rotating X-ray source and detector around patient" width="600">
+      <img src="images/1_4.png"
+           alt="CT scanner diagram"
+           style="width: 420px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.4: Schematic diagram of a computed tomography (CT) scanner showing the rotating X-ray source, detector array, and patient positioned on the scanning table.
       </p>
@@ -87,7 +93,9 @@ In a CT scan, an X-ray source and detector rotate around the patient, collecting
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_5.png" alt="CT brain scan showing axial slice of human brain anatomy" width="600">
+      <img src="images/1_5.png"
+           alt="CT brain scan"
+           style="width: 420px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.5: Cross-sectional CT image of the human brain, demonstrating how computed tomography separates overlapping tissues by imaging the body one slice at a time.
       </p>
@@ -104,7 +112,9 @@ Biomedical imaging techniques span a wide range of physical phenomena, and the t
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_6.png" alt="Electromagnetic spectrum with medical imaging modalities mapped across wavelengths" width="600">
+      <img src="images/1_6.png"
+           alt="Electromagnetic spectrum imaging modalities"
+           style="width: 420px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.6: The electromagnetic spectrum and corresponding biomedical imaging modalities, showing how different physical energy ranges produce distinct types of medical information.
       </p>
