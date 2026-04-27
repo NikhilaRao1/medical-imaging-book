@@ -16,7 +16,9 @@ Bioimaging, also called biomedical imaging or medical imaging, refers to a colle
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_1.png" alt="Conceptual illustration of medical imaging revealing internal anatomy of the human body" width="600">
+      <img src="images/1_1.png"
+           alt="Conceptual illustration of medical imaging revealing internal anatomy"
+           style="max-width:600px; max-height:380px; width:auto; height:auto; object-fit:contain;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.1: Conceptual illustration of medical imaging transforming invisible internal anatomy into visible diagnostic information, enabling noninvasive visualization of structures and biological processes inside the human body.
       </p>
