@@ -869,6 +869,17 @@ $$
 
 where $x_n$ represents the population at generation $n$ (normalized to the maximum capacity of the environment), and $r$ is the growth rate parameter. The term $1 - x_n$ accounts for environmental limitations: as the population approaches the maximum capacity, growth slows due to scarcity of resources.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_32.png" alt="Logistic map dynamics showing stable, periodic, and chaotic behavior for different growth rates" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.32: Dynamics of the logistic map for different growth rate values. As the parameter r increases, the system transitions from stable equilibrium to periodic oscillations and eventually to chaotic behavior, illustrating how complex dynamics arise from a simple nonlinear equation.
+      </p>
+    </td>
+  </tr>
+</table>
+
 The logistic map demonstrates how complex behaviors emerge from a simple nonlinear equation. Depending on the value of the growth rate rrr, the population may stabilize at a fixed value, oscillate between multiple values, or exhibit chaotic fluctuations where small changes in initial conditions lead to vastly different outcomes. This model reflects how natural systems regulate themselves and illustrates the rich variety of patterns that can arise in nonlinear systems.
 
 Nonlinear dynamics have broad implications beyond ecology. In biomedical engineering, nonlinear models are used to describe neural network activity, cardiac rhythms, and even the nonlinear response of imaging systems at extreme operating ranges. Understanding the principles of nonlinear systems allows engineers and scientists to anticipate unexpected behavior, design robust control strategies, and interpret complex signals that would be misrepresented by linear approximations.
@@ -881,11 +892,33 @@ Chaos in mathematical systems refers to deterministic behavior that is extremely
 
 Graphs of chaotic systems, such as iterations of the logistic map, often display complex, seemingly random patterns, even though they arise from simple deterministic rules. Chaos is an important concept in nonlinear dynamics because it highlights how predictability can break down, even when the system is governed by known equations. Understanding chaotic behavior is critical in modeling natural systems, including biological rhythms, cardiac signals, and population dynamics, where small fluctuations can have large effects.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_33.png" alt="Bifurcation diagram of the logistic map illustrating the onset of chaos through period doubling" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.33: Bifurcation diagram of the logistic map showing the onset of chaos. As the growth rate parameter increases, period-doubling transitions lead to chaotic behavior, demonstrating extreme sensitivity to initial conditions.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **2.34 Biological and Artificial Neurons**
 
 A biological neuron is a specialized cell that processes and transmits information in the nervous system. It collects incoming signals through branched structures called dendrites, which receive chemical or electrical inputs from other neurons. These inputs are integrated in the cell body (soma). While small individual inputs may have little or no effect, when the combined inputs exceed a certain threshold, the neuron fires an action potential, sending an electrical impulse along the axon to the synapses. At the synapses, this signal communicates with the next neuron, propagating information through the network.
 
 This threshold-based behavior allows the nervous system to filter out noise and respond only to meaningful stimuli. From a mathematical perspective, biological neurons can be modeled as artificial neurons, which sum their inputs, apply a non-linear activation function, and produce an output if the threshold is exceeded. This abstraction forms the basis of modern neural networks, linking biological principles to computational models.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/2_34.png" alt="Comparison of a biological neuron and an artificial neuron model with labeled components" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 2.34: Comparison between a biological neuron and an artificial neuron model. Biological neurons integrate incoming signals and fire when a threshold is exceeded, a process abstracted in artificial neurons through weighted summation and nonlinear activation functions.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ## **2.35 Deep Neural Networks (DNNs)**
 
