@@ -13,6 +13,17 @@ Medical imaging plays a foundational role in modern healthcare by allowing clini
 
 Bioimaging, also called biomedical imaging or medical imaging, refers to a collection of technologies that create visual representations of structures and functions within the body. These terms are often used interchangeably and all describe the same core idea: using physics, engineering, and computation to visualize anatomy, physiology, and molecular activity. Each imaging technique is designed to highlight different features, offering complementary views of the same biological system.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_1.png" alt="Conceptual illustration of medical imaging revealing internal anatomy of the human body" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.1: Conceptual illustration of medical imaging transforming invisible internal anatomy into visible diagnostic information, enabling noninvasive visualization of structures and biological processes inside the human body.
+      </p>
+    </td>
+  </tr>
+</table>
+
 As humans, we cannot see through solid objects. Medical imaging effectively gives us this ability—often compared to having “X-ray vision”—but without cutting into the body. Most imaging techniques are noninvasive, meaning they do not require surgical incisions. This dramatically reduces risk, pain, and recovery time for patients while still providing critical internal information.
 
 The noninvasive nature of medical imaging is one of its greatest benefits in healthcare. It enables repeated measurements over time, supports preventive medicine, and allows clinicians to make informed decisions quickly and safely. In short, medical imaging bridges the gap between what we can observe externally and what is happening internally, making it an indispensable tool in modern medicine and a cornerstone of bioimaging research.
@@ -23,9 +34,31 @@ The field of medical imaging began in 1895 with the discovery of X-rays by Wilhe
 
 One of the most famous images in scientific history is the X-ray of Röntgen’s wife’s hand. The image clearly showed her bones and wedding ring, making the invisible visible for the first time. This striking demonstration immediately captured public and medical attention and showed the immense diagnostic potential of X-rays. Within just a few years, hospitals around the world began adopting X-ray imaging.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_2.png" alt="Historical X-ray of Röntgen’s wife’s hand showing bones and wedding ring" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.2: X-ray image of Wilhelm Conrad Röntgen’s wife’s hand (1895), showing bones and a wedding ring. This historic image demonstrated, for the first time, the ability to visualize internal structures without surgery.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **1.3 X-Ray Radiography**
 
 X-ray radiography is one of the simplest and most widely used medical imaging techniques. In this method, X-rays pass through the body and are absorbed differently by various tissues. Dense materials such as bone absorb more X-rays and appear bright on the image, while softer tissues absorb fewer X-rays and appear darker. This contrast makes X-ray radiography especially useful for detecting broken bones, joint problems, lung conditions, and certain tumors.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_3.png" alt="Black and white X-ray image of human ribcage showing bones and soft tissue contrast" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.3: Black-and-white X-ray radiograph of a human ribcage, illustrating how dense bone absorbs more X-rays and appears brighter than surrounding soft tissue.
+      </p>
+    </td>
+  </tr>
+</table>
 
 However, X-ray radiography has important limitations. The resulting image is two-dimensional, meaning that all structures along the path of the X-ray beam are compressed into a single flat image. As a result, overlapping tissues can obscure important details, making it difficult to clearly distinguish individual structures. This lack of depth information motivated the development of more advanced imaging techniques, such as computed tomography (CT), which can separate structures in three dimensions.
 Despite its limitations, X-ray radiography remains a cornerstone of medical imaging due to its speed, accessibility, and diagnostic value, and it laid the foundation for the entire field of bioimaging.
@@ -36,13 +69,46 @@ While conventional X-ray radiography is fast and effective, it struggles when ma
 
 X-ray computed tomography, commonly known as CT, was developed to overcome this challenge. The word tomography comes from the Greek words tomos (slice) and graphein (to write), meaning “imaging by slices.” Instead of producing one flat image, CT creates cross-sectional images—thin slices of the body—that reveal internal structures layer by layer.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_4.png" alt="Diagram of CT scanner showing rotating X-ray source and detector around patient" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.4: Schematic diagram of a computed tomography (CT) scanner showing the rotating X-ray source, detector array, and patient positioned on the scanning table.
+      </p>
+    </td>
+  </tr>
+</table>
+
 In a CT scan, an X-ray source and detector rotate around the patient, collecting projection images from many different angles. These multiple measurements capture how X-rays are absorbed along thousands of paths through the body. A computer then uses mathematical reconstruction algorithms to combine this information and generate a detailed image of a single slice. By stacking many slices together, clinicians can visualize the body in three dimensions.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_5.png" alt="CT brain scan showing axial slice of human brain anatomy" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.5: Cross-sectional CT image of the human brain, demonstrating how computed tomography separates overlapping tissues by imaging the body one slice at a time.
+      </p>
+    </td>
+  </tr>
+</table>
 
 The key advantage of CT is its ability to separate overlapping tissues. Structures that would be indistinguishable in a standard X-ray become clearly visible because each slice represents a specific depth within the body. This makes CT especially powerful for detecting tumors, internal bleeding, organ damage, and complex fractures. As a result, CT imaging represents a major milestone in bioimaging, bridging the gap between simple projection imaging and true 3D visualization of human anatomy.
 
 ## **1.5 The Biomedical Imaging Spectrum**
 
 Biomedical imaging techniques span a wide range of physical phenomena, and the type of information they provide is strongly determined by where they fall on the electromagnetic spectrum—or, more broadly, the physical spectrum. Different forms of energy interact with biological tissue in different ways, revealing complementary structural, functional, and molecular information. Understanding this spectrum is key to understanding why so many distinct imaging modalities exist.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/1_6.png" alt="Electromagnetic spectrum with medical imaging modalities mapped across wavelengths" width="600">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.6: The electromagnetic spectrum and corresponding biomedical imaging modalities, showing how different physical energy ranges produce distinct types of medical information.
+      </p>
+    </td>
+  </tr>
+</table>
 
 At the high-energy end of the spectrum, gamma rays are used in nuclear imaging techniques such as PET and SPECT. These methods do not primarily image anatomy; instead, they visualize physiological and metabolic processes by detecting radioactive tracers inside the body. This makes them especially powerful for studying cancer, brain function, and cardiac health.
 
