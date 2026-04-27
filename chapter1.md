@@ -21,29 +21,11 @@ The noninvasive nature of medical imaging is one of its greatest benefits in hea
 
 The field of medical imaging began in 1895 with the discovery of X-rays by Wilhelm Conrad Röntgen. While experimenting with cathode rays, Röntgen observed that an unknown form of radiation could pass through solid objects and expose photographic plates. He called this radiation “X-rays,” using X to indicate their unknown nature. This discovery marked a turning point in both physics and medicine, as it revealed a way to see inside the human body without surgery.
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="images/handimage.png" alt="Wilhelm Conrad Röntgen X-ray of his wife's hand" width="250">
-      <p style="font-size: 0.8em; color: #555;">Figure 1. X-ray image of Wilhelm Conrad Röntgen's wife's hand, 1895.</p>
-    </td>
-  </tr>
-</table>
-
 One of the most famous images in scientific history is the X-ray of Röntgen’s wife’s hand. The image clearly showed her bones and wedding ring, making the invisible visible for the first time. This striking demonstration immediately captured public and medical attention and showed the immense diagnostic potential of X-rays. Within just a few years, hospitals around the world began adopting X-ray imaging.
 
 ## **1.3 X-Ray Radiography**
 
 X-ray radiography is one of the simplest and most widely used medical imaging techniques. In this method, X-rays pass through the body and are absorbed differently by various tissues. Dense materials such as bone absorb more X-rays and appear bright on the image, while softer tissues absorb fewer X-rays and appear darker. This contrast makes X-ray radiography especially useful for detecting broken bones, joint problems, lung conditions, and certain tumors.
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="images/xrays.png" alt="X-ray image of human ribcage" width="250">
-      <p style="font-size: 0.8em; color: #555;">Figure 2. Black-and-white X-ray image showing a human ribcage.</p>
-    </td>
-  </tr>
-</table>
 
 However, X-ray radiography has important limitations. The resulting image is two-dimensional, meaning that all structures along the path of the X-ray beam are compressed into a single flat image. As a result, overlapping tissues can obscure important details, making it difficult to clearly distinguish individual structures. This lack of depth information motivated the development of more advanced imaging techniques, such as computed tomography (CT), which can separate structures in three dimensions.
 Despite its limitations, X-ray radiography remains a cornerstone of medical imaging due to its speed, accessibility, and diagnostic value, and it laid the foundation for the entire field of bioimaging.
@@ -54,40 +36,13 @@ While conventional X-ray radiography is fast and effective, it struggles when ma
 
 X-ray computed tomography, commonly known as CT, was developed to overcome this challenge. The word tomography comes from the Greek words tomos (slice) and graphein (to write), meaning “imaging by slices.” Instead of producing one flat image, CT creates cross-sectional images—thin slices of the body—that reveal internal structures layer by layer.
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="images/computerizedtomography.png" alt="Computerized Tomography (CT) scan machine" width="600">
-      <p style="font-size: 0.8em; color: #555;">Figure 3. Diagram of a computerized tomography (CT) scanner showing key components. Source: [insert source here].</p>
-    </td>
-  </tr>
-</table>
-
 In a CT scan, an X-ray source and detector rotate around the patient, collecting projection images from many different angles. These multiple measurements capture how X-rays are absorbed along thousands of paths through the body. A computer then uses mathematical reconstruction algorithms to combine this information and generate a detailed image of a single slice. By stacking many slices together, clinicians can visualize the body in three dimensions.
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="images/CTbrainscan.png" alt="CT brain scan showing anatomical structures" width="400">
-      <p style="font-size: 0.8em; color: #555;">Figure 4. CT brain scan showing anatomical structures.</p>
-    </td>
-  </tr>
-</table>
 
 The key advantage of CT is its ability to separate overlapping tissues. Structures that would be indistinguishable in a standard X-ray become clearly visible because each slice represents a specific depth within the body. This makes CT especially powerful for detecting tumors, internal bleeding, organ damage, and complex fractures. As a result, CT imaging represents a major milestone in bioimaging, bridging the gap between simple projection imaging and true 3D visualization of human anatomy.
 
 ## **1.5 The Biomedical Imaging Spectrum**
 
 Biomedical imaging techniques span a wide range of physical phenomena, and the type of information they provide is strongly determined by where they fall on the electromagnetic spectrum—or, more broadly, the physical spectrum. Different forms of energy interact with biological tissue in different ways, revealing complementary structural, functional, and molecular information. Understanding this spectrum is key to understanding why so many distinct imaging modalities exist.
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="images/spectrum.png" alt="Electromagnetic spectrum showing imaging modalities" width="500">
-      <p style="font-size: 0.8em; color: #555;">Figure 5. Electromagnetic spectrum showing where different medical imaging modalities fall based on wavelength and frequency.</p>
-    </td>
-  </tr>
-</table>
 
 At the high-energy end of the spectrum, gamma rays are used in nuclear imaging techniques such as PET and SPECT. These methods do not primarily image anatomy; instead, they visualize physiological and metabolic processes by detecting radioactive tracers inside the body. This makes them especially powerful for studying cancer, brain function, and cardiac health.
 
