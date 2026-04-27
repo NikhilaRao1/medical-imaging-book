@@ -112,9 +112,9 @@ Biomedical imaging techniques span a wide range of physical phenomena, and the t
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/1_6.png"
-           alt="Electromagnetic spectrum imaging modalities"
-           style="width: 420px; height: auto; display: block; margin: 0 auto;">
+     <img src="images/1_6.png"
+     alt="Electromagnetic spectrum showing imaging modalities"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.6: The electromagnetic spectrum and corresponding biomedical imaging modalities, showing how different physical energy ranges produce distinct types of medical information.
       </p>
