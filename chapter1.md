@@ -138,11 +138,37 @@ At the heart of many bioimaging techniques is the idea of tomography, which reli
 
 Tomographic imaging works by acquiring a large number of these projections from different angles around the body or object. The key challenge is inversion: taking the measured projection data and reverse-engineering the internal structure that produced them. In other words, the imaging system asks the question, “What distribution inside the body would give rise to the measurements we observed?” Mathematical inversion algorithms answer this question, allowing the reconstruction of cross-sectional images that reveal internal anatomy without overlapping tissues.
 
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_7.png"
+     alt="Tomographic projections collected from multiple angles and reconstructed into a cross-sectional image"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.7: Illustration of tomographic imaging, where multiple projection measurements acquired at different angles are mathematically inverted to reconstruct a cross-sectional image of internal structures.
+      </p>
+    </td>
+  </tr>
+</table>
+
 Inversion is not unique to CT; it appears across biomedical imaging, including PET, SPECT, and MRI. While the physics of data acquisition differs between modalities, the unifying concept is the same: indirect measurements are transformed into meaningful images through computation.
 
 ## **1.7 Blurring, Resolution, and Deblurring**
 
 No imaging system is perfect. Even when the internal structure is reconstructed correctly, images often appear blurred. This blur arises from physical limitations such as detector size, wave diffraction, motion, and noise. A useful way to describe this effect is through the point spread function (PSF), which characterizes how a single point object appears in the image. Instead of a perfect point, it spreads into a small blob.
+
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_8.png"
+     alt="Point spread function demonstrating image blurring"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.8: The point spread function (PSF) of an imaging system, showing how an ideal point object is blurred into a finite-sized distribution in the reconstructed image.
+      </p>
+    </td>
+  </tr>
+</table>
 
 Mathematically, image formation can often be modeled as a convolution of the true object with the system’s point spread function. This means the observed image is a blurred version of reality, shaped by the imaging system itself. Understanding this relationship is essential for interpreting images correctly and for improving image quality.
 Deblurring aims to undo the effects of this convolution and recover a sharper estimate of the original object. This process is closely tied to inversion and often relies on mathematical tools such as the Fourier transform, which provides a powerful framework for analyzing blurring and resolution. These concepts will be developed in detail later, but the key idea is simple: by understanding how blur is introduced, we can design algorithms to partially reverse it.
@@ -155,6 +181,19 @@ A central mathematical idea in biomedical imaging is the relationship between co
 
 In the Fourier domain, convolution turns into multiplication. This powerful result means that instead of dealing with a complex integral in space or time, we can work with straightforward multiplications in frequency space. This insight underlies many reconstruction and deblurring algorithms in medical imaging. By transforming data into the Fourier domain, correcting or compensating for system effects, and transforming back, imaging systems can recover clearer and more accurate representations of internal structures.
 
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_9.png"
+     alt="Convolution in spatial domain and multiplication in Fourier domain"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.9: Relationship between convolution in the spatial domain and multiplication in the Fourier domain, forming the mathematical basis for image reconstruction and deblurring.
+      </p>
+    </td>
+  </tr>
+</table>
+
 These ideas connect directly to inversion. Inversion starts with the outcome—the measured image or signal—and infers the underlying cause: the original biological structure or process. Whether reconstructing a CT slice from projections or deblurring an optical image, inversion reframes imaging as a problem of reasoning backward from data to source. This perspective is a unifying theme across nearly all biomedical imaging modalities.
 
 ## **1.9 Biomedical Imaging as an Interdisciplinary**
@@ -162,6 +201,19 @@ These ideas connect directly to inversion. Inversion starts with the outcome—t
 Medical imaging is inherently interdisciplinary, sitting at the intersection of multiple scientific and technical domains. Mathematics provides the language of inversion, reconstruction, and signal processing. Physics governs how energy—whether X-rays, radio waves, light, or sound—interacts with tissue. Chemistry enables contrast agents and molecular probes. Biology explains the structure and function of tissues being imaged, while medicine defines the clinical questions that imaging must answer. Engineering brings all of these elements together into practical, reliable imaging systems.
 
 This convergence is the foundation of biomedical engineering, a field that explicitly integrates biology and medicine with engineering principles. As healthcare becomes increasingly technology-driven—relying on advanced imaging, data analysis, and computational tools—the demand for biomedical engineers continues to grow. Biomedical imaging exemplifies this trend, offering opportunities to work at the cutting edge of science while directly impacting patient care.
+
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_10.png"
+     alt="X-ray projections and Radon transform geometry"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.10: X-ray projections collected at multiple angles around an object, forming the Radon transform used in computed tomography image reconstruction.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ## **1.10 X-Ray Imaging, the Radon Transform, and Fourier-Based Reconstruction**
 
@@ -180,6 +232,19 @@ p(t, \theta).
 $$
 
 Here, $t$ represents position along a one-dimensional detector array, and $\theta$ represents the orientation angle of the X-ray projection. By changing the angle $\theta$, the data acquisition system rotates around the object and gathers projections from many different directions.
+
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_11.png"
+     alt="PET coincidence detection with annihilation photons"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.11: Principle of PET coincidence detection, where paired gamma-ray photons emitted from positron annihilation events are detected along a line of response.
+      </p>
+    </td>
+  </tr>
+</table>
 
 The central goal of X-ray computed tomography is to reconstruct the original image 
 
@@ -204,6 +269,7 @@ $$
 A remarkable result—known as the Fourier slice theorem—states that the Fourier transform of a projection corresponds to a slice through the two-dimensional Fourier transform of the original image. Each 1D projection therefore provides a line (or profile) of information in the frequency domain.
 
 As the acquisition system rotates and projections are collected over many angles, these frequency-domain slices fill up the entire two-dimensional Fourier space of the object. Once sufficient coverage of this Fourier space is obtained, the original image can be reconstructed by applying the inverse Fourier transform.
+
 This framework highlights a deep connection between data acquisition and image reconstruction. The forward process—collecting X-ray projections as line integrals—is mathematically linked to the inverse process—reconstructing the image—through Fourier analysis. Understanding this relationship is fundamental to biomedical imaging, as it reveals how physical measurements, mathematical transforms, and computational algorithms work together to produce meaningful images of the human body.
 
 ## **1.11 Positron Emission Tomography (PET): Imaging Function, Not Just Structure**
@@ -211,7 +277,21 @@ This framework highlights a deep connection between data acquisition and image r
 Positron emission tomography (PET) is a medical imaging technique designed to visualize functional activity inside the body rather than detailed anatomy. Instead of showing what organs look like, PET reveals how tissues are behaving—such as how actively they are consuming energy or participating in metabolic processes. This makes PET especially powerful for studying cancer, brain function, and heart disease.
 
 PET imaging begins by introducing a radioactive tracer into the body. These tracers are radioactive chemicals that are biologically active and participate in normal physiological processes. For example, many PET tracers are glucose analogs. Because tumors often have abnormally high metabolic rates, they consume more glucose than surrounding tissue and therefore absorb more of the tracer. This selective uptake creates contrast based on biological function rather than physical density.
+
 The tracer undergoes radioactive decay by emitting a positron. When the positron encounters an electron, the two annihilate, producing a pair of gamma-ray photons. These two photons are emitted simultaneously and travel in nearly opposite directions. Gamma rays, like X-rays, can penetrate tissue and escape the body, allowing them to be detected externally.
+
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_12.png"
+     alt="Comparison of anatomical and functional imaging"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.12: Comparison between anatomical imaging (e.g., CT or MRI), which reveals structure, and functional imaging (e.g., PET), which visualizes physiological activity.
+      </p>
+    </td>
+  </tr>
+</table>
 
 PET scanners are designed with rings of detectors surrounding the patient. When two detectors on opposite sides of the scanner register gamma-ray photons at the same time, the system infers that both photons originated from the same annihilation event. This event must have occurred somewhere along the straight line connecting the two detectors, known as a line of response. By collecting millions of these coincident events from many angles, PET builds up a dataset of projection measurements.
 
@@ -229,6 +309,19 @@ In contrast, nuclear imaging techniques, such as PET and SPECT, are forms of fun
 
 The key goal of functional imaging is to understand where biological activity is occurring in the body and how much activity is present. Instead of visualizing anatomy alone, functional imaging maps processes like metabolism, perfusion, and receptor binding. When combined with anatomical imaging, this functional information provides a much more complete picture of health and disease, linking structure to function in a way that is essential for modern bioimaging.
 
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_13.png"
+     alt="PET imaging workflow from tracer injection to image reconstruction"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.13: Overview of the PET imaging workflow, including radiotracer injection, positron emission, gamma-ray detection, and tomographic image reconstruction.
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## **1.13 Positron Emission Tomography (PET)**
 
 Positron Emission Tomography (PET) is a powerful imaging technique that visualizes biological function rather than merely anatomical structure. PET is widely used to study physiological processes across the body, providing insight into metabolism, cancer activity, brain function, and heart conditions. For example, PET can track how tissues consume energy or nutrients, detect tumors based on their increased metabolic activity, map regions of the brain involved in cognition or disease, and assess blood flow and tissue viability in the heart. By capturing dynamic biological processes, PET complements anatomical imaging techniques such as CT and MRI.
@@ -236,6 +329,19 @@ Positron Emission Tomography (PET) is a powerful imaging technique that visualiz
 PET imaging relies on the administration of radiotracers, which are biologically active molecules labeled with a radioactive isotope. These tracers participate in normal metabolic processes and undergo decay that emits paired gamma-ray photons. The photons travel in opposite directions, and PET scanners detect coincident events, where two photons are simultaneously recorded by detectors on opposite sides of the body. This coincidence detection provides precise spatial information about the location of the radioactive decay event, allowing for accurate mapping of biological activity within tissues.
 
 The signals collected by the PET scanner are processed using computational algorithms to generate tomographic three-dimensional images. These images display the distribution and intensity of the tracer, effectively revealing where and how tissues are functioning in real time. Unlike CT, which primarily provides structural information, PET highlights active physiology, making it an indispensable tool in clinical applications such as oncology, neurology, and cardiology. By combining functional insight with high-resolution imaging, PET plays a critical role in diagnosis, treatment planning, and monitoring of disease progression.
+
+<table align="center">
+  <tr>
+    <td align="center">
+     <img src="images/1_14.png"
+     alt="SPECT imaging with collimated gamma-ray detection"
+     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+      <p style="font-size: 0.8em; color: #555;">
+        Figure 1.14: SPECT imaging principle, where single gamma-ray photons emitted from radiotracers are directionally filtered by a collimator before tomographic reconstruction.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ## **1.14 Single Photon Emission Computed Tomography (SPECT)**
 
