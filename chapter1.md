@@ -207,7 +207,7 @@ This convergence is the foundation of biomedical engineering, a field that expli
     <td align="center">
      <img src="images/1_10.png"
      alt="X-ray projections and Radon transform geometry"
-     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+     style="width: 500px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.10: X-ray projections collected at multiple angles around an object, forming the Radon transform used in computed tomography image reconstruction.
       </p>
@@ -335,7 +335,7 @@ The signals collected by the PET scanner are processed using computational algor
     <td align="center">
      <img src="images/1_14.png"
      alt="SPECT imaging with collimated gamma-ray detection"
-     style="width: 650px; height: auto; display: block; margin: 0 auto;">
+     style="width: 500px; height: auto; display: block; margin: 0 auto;">
       <p style="font-size: 0.8em; color: #555;">
         Figure 1.14: SPECT imaging principle, where single gamma-ray photons emitted from radiotracers are directionally filtered by a collimator before tomographic reconstruction.
       </p>
